@@ -352,21 +352,21 @@ const Hero = () => {
                   <div className="absolute w-[287px] top-[22px] left-[10px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[19px] text-center tracking-[0] leading-[32px]">
                     100 GB Cloud Storage
                   </div>
-                  <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" />
+                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" /> */}
                   <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/line.png" />
                 </div>
                 <div className="h-[73px] top-[144px] absolute w-[308px] left-0">
                   <div className="absolute w-[287px] top-[22px] left-[10px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[19px] text-center tracking-[0] leading-[32px]">
                     Unlimited Meetings
                   </div>
-                  <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" />
+                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" /> */}
                   <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/line.png" />
                 </div>
                 <div className="h-[54px] top-[216px] absolute w-[308px] left-0">
                   <div className="absolute w-[287px] top-[22px] left-[10px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[19px] text-center tracking-[0] leading-[32px]">
                     Premium Support
                   </div>
-                  <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="line-3.svg" />
+                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" /> */}
                 </div>
               </div>
               <div className="absolute top-[26px] left-[128px] [font-family:'Poppins-Black',Helvetica] font-black text-[#f54b4b] text-[14px] text-center tracking-[2.00px] leading-[normal]">
@@ -374,14 +374,14 @@ const Hero = () => {
               </div>
               <div className="absolute w-[108px] h-[65px] top-[73px] left-[121px] overflow-hidden">
                 <div className="relative w-[109px] h-[65px]">
-                  <div className="absolute top-[33px] left-[71px] [font-family:'Rubik-Regular',Helvetica] font-normal text-black text-[17px] tracking-[0] leading-[29px] whitespace-nowrap">
+                  <div className="absolute top-[33px] left-[72px] [font-family:'Rubik-Regular',Helvetica] font-normal text-black text-[17px] tracking-[0] leading-[29px] whitespace-nowrap">
                     / mo
                   </div>
                   <p className="absolute top-0 left-0 [font-family:'Poppins-Bold',Helvetica] font-bold text-black text-[24px] tracking-[0] leading-[65px] whitespace-nowrap">
                     <span className="[font-family:'Poppins-Bold',Helvetica] font-bold text-black text-[24px] tracking-[0] leading-[65px]">
                       $
                     </span>
-                    <span className="text-[60px]">19</span>
+                    <span className="text-[55px]">19</span>
                   </p>
                 </div>
               </div>
