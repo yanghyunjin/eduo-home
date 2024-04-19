@@ -345,28 +345,28 @@ const Hero = () => {
                   <div className="absolute w-[287px] top-[22px] left-[10px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[19px] text-center tracking-[0] leading-[32px]">
                     Upto 100 Team Members
                   </div>
-                  <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" />
-                  <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/line.png" />
+                  <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/Line.png" />
+                  <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/Line.png" />
                 </div>
                 <div className="absolute w-[308px] h-[73px] top-[72px] left-0">
                   <div className="absolute w-[287px] top-[22px] left-[10px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[19px] text-center tracking-[0] leading-[32px]">
                     100 GB Cloud Storage
                   </div>
-                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" /> */}
-                  <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/line.png" />
+                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/Line.png" /> */}
+                  <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/Line.png" />
                 </div>
                 <div className="h-[73px] top-[144px] absolute w-[308px] left-0">
                   <div className="absolute w-[287px] top-[22px] left-[10px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[19px] text-center tracking-[0] leading-[32px]">
                     Unlimited Meetings
                   </div>
-                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" /> */}
-                  <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/line.png" />
+                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/Line.png" /> */}
+                  <img className="absolute w-[306px] h-px top-[72px] left-0" alt="Line copy" src="/images/hero/Line.png" />
                 </div>
                 <div className="h-[54px] top-[216px] absolute w-[308px] left-0">
                   <div className="absolute w-[287px] top-[22px] left-[10px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[19px] text-center tracking-[0] leading-[32px]">
                     Premium Support
                   </div>
-                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/line.png" /> */}
+                  {/* <img className="absolute w-[306px] h-px top-0 left-0" alt="Line" src="/images/hero/Line.png" /> */}
                 </div>
               </div>
               <div className="absolute top-[26px] left-[128px] [font-family:'Poppins-Black',Helvetica] font-black text-[#f54b4b] text-[14px] text-center tracking-[2.00px] leading-[normal]">
