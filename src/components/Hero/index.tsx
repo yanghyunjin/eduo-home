@@ -218,7 +218,7 @@ const Hero = () => {
               <img
                 className="absolute w-[200px] h-[108px] !left-[80px] !top-[93px] object-cover"
                 alt="Students discussion"
-                src="/images/hero/saly1.png"
+                src="/images/hero/saly_1.png"
               />
               {/* <Saly className="!absolute !left-[80px] !top-[93px]" /> */}
             </div>
@@ -237,7 +237,7 @@ const Hero = () => {
               <img
                 className="absolute w-[200px] h-[200px] top-[28px] left-[80px] object-cover"
                 alt="Students discussion"
-                src="/images/hero/saly3.png"
+                src="/images/hero/saly_3.png"
               />
             </div>
           </div>
@@ -249,7 +249,7 @@ const Hero = () => {
               <img
                 className="absolute w-[160px] h-[200px] top-[48px] left-[100px] object-cover"
                 alt="Saly"
-                src="/images/hero/saly2.png"
+                src="/images/hero/saly_2.png"
               />
               <div className="left-[157px] absolute top-[260px] [font-family:'Poppins-Medium',Helvetica] font-medium text-black text-[24px] text-center tracking-[0] leading-[normal]">
                 LMS
@@ -309,7 +309,7 @@ const Hero = () => {
                   Automated transcripts
                 </p>
                 <img
-                   className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
+                  className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
                   alt="Image"
                   src="/images/hero/Sertificate.png"
                 />
