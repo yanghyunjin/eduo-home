@@ -62,14 +62,14 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center ${
+        className={`header left-0 top-0 z-40 flex w-full items-center justify-center ${
           sticky
             ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition "
             : "absolute bg-transparent"
         }`}
       >
         
-        <div className="relative -mx-4 flex items-center justify-between">
+        {/* <div className="relative -mx-4 flex items-center justify-between">
           <div className="relative w-full h-[84px]">
             <div className="absolute w-[146px] h-[24px] top-[30px] left-[1480px]">
               <div className="inline-flex items-center justify-center gap-[50px] relative">
@@ -94,7 +94,28 @@ const Header = () => {
             </div>
               <div className="absolute w-[120px] h-[40px] top-[22px] left-[144px] object-cover  bg-[url(/images/logo/EDUO_LOGO.png)] bg-cover" />              
           </div>
+        </div> */}
+       <div className="relative flex items-center justify-between w-full max-w-screen-2xl h-20 px-4">
+        <div className="flex items-center justify-between w-full ">
+          <div className="bg-cover bg-center w-[120px] h-10 ml-20" style={{ backgroundImage: "url(/images/logo/EDUO_LOGO.png)" }}></div>
+          <div className="flex w-1/4 justify-end items-center">
+          <div className="flex ">
+            <div onClick={scrollToTop} className={`cursor-pointer font-medium ${sticky ? "text-black" : "text-white"} text-lg mr-10`}>
+              Home
+            </div>
+            <div onClick={scrollToTop2} className={`cursor-pointer font-normal ${sticky ? "text-black" : "text-white"} text-lg mr-10`}>
+              About
+            </div>
+          </div>
+          <button onClick={scrollToTop3} className="px-4 py-2 bg-red-500 rounded-lg text-white text-lg font-medium mr-10">
+            Contact
+          </button>
+          </div>
         </div>
+        
+      </div>
+
+
       </header>
     </>
   );

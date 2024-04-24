@@ -14,8 +14,8 @@ import ModalVideo from "react-modal-video";
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <>
-    <div className="bg-white flex flex-row justify-center w-full">
+    
+    <div className="bg-white flex flex-row flex-nowrap justify-center w-full overflow-x-auto">
       <ModalVideo
       
         channel="custom"
@@ -26,7 +26,7 @@ const Hero = () => {
         // videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
       />
-      <div className="bg-white overflow-hidden w-[1920px] h-[6980px] relative">
+      <div className="bg-white overflow-hidden w-[1920px] h-[6980px] relative overflow-x-auto">
         <div className="absolute w-[1920px] h-[1150px] top-[-350px] left-0">
           <div className="absolute w-[1920px] h-[1150px] top-0 left-0">
             <div className="relative h-[800px] top-[350px] bg-[url(/images/hero/Background.png)] bg-cover bg-[50%_50%]">
@@ -488,7 +488,7 @@ const Hero = () => {
         </div>
       </div>
     </div> 
-    </>
+    
   );
 };
 
