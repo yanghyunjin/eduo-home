@@ -483,7 +483,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <img className="absolute w-[1920px] h-[100px] top-0 left-0" alt="Wave" src="/images/hero/wave2.png" />
+            <img className="absolute w-[1920px] h-[100px] top-0 left-0" alt="Wave" src="/images/hero/wave_2.png" />
           </div>
         </div>
       </div>
