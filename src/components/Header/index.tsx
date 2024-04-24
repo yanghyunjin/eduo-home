@@ -35,6 +35,27 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToTop2 = () => {
+    window.scrollTo({
+      top: 2280,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToTop3 = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+  
 
   const usePathName = usePathname();
 
@@ -47,156 +68,31 @@ const Header = () => {
             : "absolute bg-transparent"
         }`}
       >
-        <div className="container">
-          <div className="relative -mx-4 flex items-center justify-between">
-            {/* <div className="w-60 max-w-full px-4 xl:mr-12">
-              <Link
-                href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
-              >
-                <Image
-                  src="/images/logo/EDUO_LOGO.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/EDUO_LOGO.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
-              </Link>
-            </div> */}
-
-            <div className="relative w-[1440px] h-[84px]">
-              <div className="absolute w-[146px] h-[24px] top-[30px] left-[1000px]">
-                <div className="inline-flex items-center justify-center gap-[50px] relative">
-                  <div className="inline-flex items-center gap-[10px] relative flex-[0_0_auto]">
-                    <div className={`[font-family:'Poppins-Medium',Helvetica] font-medium relative w-fit mt-[-1.00px] ${sticky ?"text-black": "text-white"} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}>
-                      Home
-                    </div>
+        
+        <div className="relative -mx-4 flex items-center justify-between">
+          <div className="relative w-full h-[84px]">
+            <div className="absolute w-[146px] h-[24px] top-[30px] left-[1480px]">
+              <div className="inline-flex items-center justify-center gap-[50px] relative">
+                <div className="inline-flex items-center gap-[10px] relative flex-[0_0_auto]">
+                  <div onClick={scrollToTop} className={`cursor-pointer relative w-fit mt-[-1.00px] [font-family:'Poppins-Medium',Helvetica] font-medium ${sticky ?"text-black": "text-white"} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}>
+                    Home
                   </div>
-                  <div className="inline-flex items-center gap-[10px] relative flex-[0_0_auto]">
-                    <div className={`[font-family:'Poppins-Regular',Helvetica] font-normal relative w-fit mt-[-1.00px] ${sticky ?"text-black": "text-white"} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}>
-                      About
-                    </div>
+                </div>
+                <div className="inline-flex items-center gap-[10px] relative flex-[0_0_auto]">
+                  <div onClick={scrollToTop2}  className={`cursor-pointer relative w-fit mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal ${sticky ?"text-black": "text-white"} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}>
+                    About
                   </div>
                 </div>
               </div>
-              <div className="inline-flex items-start gap-[14px] absolute top-[22px] left-[1196px]">
-                <button className="all-[unset] box-border flex w-[100px] items-center justify-center gap-[10px] px-0 py-[10px] relative bg-[#f54b4b] rounded-[6px]">
-                  <div className={`relative w-fit mt-[-1.00px] [font-family:'Poppins-Medium',Helvetica] font-medium ${sticky ?"text-white": "text-white"} text-[16px] text-center tracking-[0] leading-[20px] whitespace-nowrap`}>
-                    Contact
-                  </div>
-                </button>
-              </div>
-              <img className="absolute w-[120px] h-[40px] top-[22px] left-[144px] object-cover" alt="Logo" src="/images/logo/EDUO_LOGO.png" />
             </div>
-            {/* <div className="flex w-full items-center justify-between px-4">
-              <div>
-                <button
-                  onClick={navbarToggleHandler}
-                  id="navbarToggler"
-                  aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
-                >
-                  <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 text-white ${
-                      navbarOpen ? " top-[7px] rotate-45" : " "
-                    }`}
-                  />
-                  <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 text-white ${
-                      navbarOpen ? "opacity-0 " : " "
-                    }`}
-                  />
-                  <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 text-white ${
-                      navbarOpen ? " top-[-8px] -rotate-45" : " "
-                    }`}
-                  />
-                </button>
-                <nav
-                  id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
-                    navbarOpen
-                      ? "visibility top-full opacity-100"
-                      : "invisible top-[120%] opacity-0"
-                  }`}
-                >
-                  <ul className="block lg:flex lg:space-x-12">
-                    {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative">
-                        {menuItem.path ? (
-                          <Link
-                            href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${sticky ? "text-black":"text-white hover:text-primary"} `}
-                          >
-                            {menuItem.title}
-                          </Link>
-                        ) : (
-                          <>
-                            <p
-                              onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
-                            >
-                              {menuItem.title}
-                              <span className="pl-3">
-                                <svg width="25" height="24" viewBox="0 0 25 24">
-                                  <path
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    d="M6.29289 8.8427C6.68342 8.45217 7.31658 8.45217 7.70711 8.8427L12 13.1356L16.2929 8.8427C16.6834 8.45217 17.3166 8.45217 17.7071 8.8427C18.0976 9.23322 18.0976 9.86639 17.7071 10.2569L12 15.964L6.29289 10.2569C5.90237 9.86639 5.90237 9.23322 6.29289 8.8427Z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
-                              </span>
-                            </p>
-                            <div
-                              className={`submenu relative left-0 top-full rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                                openIndex === index ? "block" : "hidden"
-                              }`}
-                            >
-                              {menuItem.submenu.map((submenuItem, index) => (
-                                <Link
-                                  href={submenuItem.path}
-                                  key={index}
-                                  className="block rounded py-2.5 text-sm text-dark hover:text-primary lg:px-3"
-                                >
-                                  {submenuItem.title}
-                                </Link>
-                              ))}
-                            </div>
-                          </>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-              </div> */}
-              {/* <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-sm bg-primary px-8 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link>
-                <div>
-                  <ThemeToggler />
+            <div className="inline-flex items-start gap-[14px] absolute top-[22px] left-[1676px]">
+              <button onClick={scrollToTop3}  className="all-[unset] box-border flex w-[100px] items-center justify-center gap-[10px] px-0 py-[10px] relative bg-[#f54b4b] rounded-[6px]">
+                <div className="relative w-fit mt-[-1.00px] [font-family:'Poppins-Medium',Helvetica] font-medium text-white text-[16px] text-center tracking-[0] leading-[20px] whitespace-nowrap">
+                  Contact
                 </div>
-              </div> */}
-            {/* </div> */}
+              </button>
+            </div>
+              <div className="absolute w-[120px] h-[40px] top-[22px] left-[144px] object-cover  bg-[url(/images/logo/EDUO_LOGO.png)] bg-cover" />              
           </div>
         </div>
       </header>
