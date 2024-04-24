@@ -26,7 +26,7 @@ const Hero = () => {
         // videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
       />
-      <div className="bg-white overflow-hidden w-[1920px] h-[6980px] relative overflow-x-auto">
+      <div className="bg-white overflow-hidden w-[1920px] h-[7460px] relative overflow-x-auto">
         <div className="absolute w-[1920px] h-[1150px] top-[-350px] left-0">
           <div className="absolute w-[1920px] h-[1150px] top-0 left-0">
             <div className="relative h-[800px] top-[350px] bg-[url(/images/hero/Background.png)] bg-cover bg-[50%_50%]">
@@ -151,7 +151,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute w-[1920px] h-[460px] top-[4770px] left-0 bg-white">
+        <div className="absolute w-[1920px] h-[460px] top-[5252px] left-0 bg-white">
           <div className="flex flex-col w-[1440px] h-[244px] items-center gap-[64px] px-[144px] py-0 relative top-[107px] left-[240px]">
             <div className="flex flex-col w-[1110px] items-center gap-[8px] relative flex-[0_0_auto]">
               <div className="relative self-stretch mt-[-1.00px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[48px] text-center tracking-[0] leading-[44px]">
@@ -260,8 +260,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute w-[1920px] h-[2408px] top-[2362px] left-0">
-          <div className="absolute w-[1920px] h-[2408px] top-0 left-0 bg-white">
+        <div className="absolute w-[1920px] h-[2890px] top-[2362px] left-0">
+          <div className="absolute w-[1920px] h-[2890px] top-0 left-0 bg-white">
             <div className="absolute w-[580px] h-[50px] top-[118px] left-[144px]">
               <div className="relative w-[578px] h-[50px]">
                 <div className="absolute w-[455px] top-0 left-0 [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[48px] tracking-[0] leading-[50.4px]">
@@ -274,163 +274,181 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <div className="absolute w-[1920px] h-[1840px] top-[568px] left-0 bg-[url(/images/hero/Background2.png)] bg-cover bg-[50%_50%]">
-              <div className="absolute w-[383px] h-[152px] top-[1462px] left-[346px]">
-                <div className="absolute top-0 left-[60px] [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
-                  For Administrators
-                </div>
-                <p className="absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-                  Faculty and student database
-                  <br />
-                  Administrative documents
-                  <br />
-                  Scheduling
-                  <br />
-                  Automated transcripts
-                </p>
-                <img
-                   className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
-                  alt="Image"
-                  src="/images/hero/Book_check.png"
-                />
-                {/* <BookCheck className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
-              </div>
-              <div className="absolute w-[383px] h-[152px] top-[1462px] left-[769px]">
-                <div className="absolute top-0 left-[56px] [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
-                  For Teachers
-                </div>
-                <p className="absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-                  Faculty and student database
-                  <br />
-                  Administrative documents
-                  <br />
-                  Scheduling
-                  <br />
-                  Automated transcripts
-                </p>
-                <img
+          
+        <div className="absolute w-[1920px] h-[2208px] top-[682px] left-0 bg-[url(/images/hero/Background2.png)] bg-cover bg-[50%_50%]">
+          <div className="absolute w-[383px] h-[152px] top-[1442px] left-[489px]">
+            <div className="left-[60px] absolute top-0 [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
+              For Administrators
+            </div>
+            <p className="absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
+              Faculty and student database
+              <br />
+              Administrative documents
+              <br />
+              Scheduling
+              <br />
+              Automated transcripts
+            </p>
+            <img
+                      className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
+                      alt="Image"
+                      src="/images/hero/Book_check.png"
+                    />
+            {/* <BookCheck className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
+          </div>
+          <div className="absolute w-[383px] h-[152px] top-[1442px] left-[1048px]">
+            <div className="left-[56px] absolute top-0 [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
+              For Teachers
+            </div>
+            <p className="absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
+              Lesson planning support
+              <br />
+              Tracking student progress
+              <br />
+              Question generator
+              <br />
+              Attendance management
+            </p>
+            <img
                   className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
                   alt="Image"
                   src="/images/hero/Sertificate.png"
                 />
-                {/* <Sertificate className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
-              </div>
-              <div className="absolute w-[383px] h-[152px] top-[1462px] left-[1192px]">
-                <div className="absolute top-0 left-[56px] [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
-                  For Students
-                </div>
-                <p className="absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-                  Faculty and student database
-                  <br />
-                  Administrative documents
-                  <br />
-                  Scheduling
-                  <br />
-                  Automated transcripts
-                </p>
-                <img
+            {/* <Sertificate className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
+          </div>
+          <div className="absolute w-[383px] h-[152px] top-[1721px] left-[489px]">
+            <div className="left-[56px] absolute top-0 [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
+              For Students
+            </div>
+            <p className="w-[463px] absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
+              Comprehensive workspace
+              <br />
+              Discussion board
+              <br />
+              Video lectures with distraction prevention
+              <br />
+              College &amp; career counseling
+            </p>
+            {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="group.svg" /> */}
+            <img
                    className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
                   alt="Image"
                   src="/images/hero/Group.png"
                 />
-                {/* <Group
-                  className="!absolute !left-0 !top-0"
-                  ellipse="ellipse-47-2.svg"
-                  ellipseClassName="!border-[unset]"
-                  img="ellipse-48-2.svg"
-                  rectangle="rectangle-4160-2.svg"
-                  subtract="subtract-2.svg"
-                  subtract1="subtract-3.svg"
-                /> */}
-              </div>
-              <div className="absolute top-[1242px] left-[822px] [font-family:'Poppins-Black',Helvetica] font-black text-white text-[48px] text-center tracking-[0] leading-[58px] whitespace-nowrap">
-                Why Eduo?
-              </div>
-              <p className="absolute top-[1312px] left-[587px] [font-family:'Poppins-Black',Helvetica] font-black text-white text-[32px] text-center tracking-[0] leading-[58px] whitespace-nowrap">
-                We provide the solution to all your problems.
-              </p>
-              <div onClick={() => {setOpen(true)}}  className="cursor-pointer absolute w-[940px] h-[540px] top-[542px] left-[490px] bg-[url(/images/hero/image23.png)] bg-[100%_100%]">
+          </div>
+          <div className="absolute w-[383px] h-[152px] top-[1721px] left-[1048px]">
+            <div className="left-[56px] absolute top-0 [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
+              For Parents
+            </div>
+            <p className="w-[463px] absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
+              Check tuition and invoice <br />
+              View grades and homework <br />
+              Monitor attendance and discipline <br />
+              Access calendar and other resources
+            </p>
+            {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="image.svg" /> */}
+            <img
+                   className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
+                  alt="Image"
+                  src="/images/hero/Group.png"
+                />
+          </div>
+          <div className="absolute top-[1162px] left-[823px] [font-family:'Poppins-ExtraBold',Helvetica] font-extrabold text-white text-[48px] text-center tracking-[0] leading-[58px] whitespace-nowrap">
+            Why Eduo?
+          </div>
+          <p className="absolute top-[1232px] left-[597px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-white text-[32px] text-center tracking-[0] leading-[58px] whitespace-nowrap">
+            We provide the solution to all your problems.
+          </p>
+          {/* <img className="absolute w-[160px] h-px top-[1352px] left-[880px]" alt="Line" src="line-8.svg" /> */}
+          <div onClick={() => {setOpen(true)}}  className="cursor-pointer absolute w-[940px] h-[540px] top-[542px] left-[490px] bg-[url(/images/hero/image23.png)] bg-[100%_100%]">
                 <img className="  absolute w-[242px] h-[242px] top-[171px] left-[349px]" alt="Button" src="/images/hero/Button.png" />
               </div>
               <img
                 
-                className="absolute w-[160px] h-px top-[1160px] left-[880px]" 
+                className="absolute w-[160px] h-px top-[1352px] left-[880px]" 
                 alt="Button play"
                 src="images/hero/Line.png"
               />
-              {/* <img className="absolute w-[160px] h-px top-[1160px] left-[880px]" alt="Line" src="line-8.svg" /> */}
-              <div className="absolute w-[317px] top-[1744px] left-[855px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-white text-[32px] tracking-[0] leading-[normal]">
-                ...and more!
-              </div>
-            </div>
+          <div className="absolute w-[317px] top-[2038px] left-[802px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-white text-[32px] text-center tracking-[0] leading-[normal]">
+            ...and more!
           </div>
+        </div>
+        </div>
           <div className="flex flex-wrap w-[940px] items-center justify-center gap-[36px] p-[40px] absolute top-[278px] left-[490px] bg-white rounded-[20px] overflow-hidden shadow-[0px_0px_9px_2px_#0000000d]">
             <img className="relative w-[848px] h-[608px] mt-[-4.00px] object-cover" alt="Cas" src="/images/hero/CAS.png" />
             <div className="relative w-[473px] h-[48px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[32px] tracking-[0] leading-[normal]">
               Collegiate Academy of Seoul
             </div>
-            <div className="relative w-[146px] h-[36px]">
-              <div className="relative w-[144px] h-[36px] bg-white rounded-[20px] border-2 border-solid border-black flex items-center justify-center">
-                <div className="absolute[font-family:'Poppins-Medium',Helvetica] font-medium text-black text-[18px] tracking-[0] leading-[normal]">
-                  View Work
+          </div>
+        </div>
+
+
+        <div className="absolute w-[1922px] h-[1748px] top-[5712px] left-0">
+          <div className="absolute w-[1922px] h-[1380px] top-0 left-0">
+            <div className="relative h-[1382px] -top-px -left-px bg-[#f0f0f0]">
+              <div className="absolute w-[380px] top-[91px] left-[242px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[48px] tracking-[0] leading-[normal]">
+                Success Stories
+              </div>
+              <img
+                className="absolute w-[200px] h-[160px] top-[231px] left-[397px] object-cover"
+                alt="Img"
+                src="images/hero/start.png"
+              />
+              <img
+                className="absolute w-[200px] h-[160px] top-[721px] left-[1421px] object-cover"
+                alt="Img"
+                src="images/hero/end.png"
+              />
+              <div className="absolute w-[1042px] h-[316px] top-[311px] left-[641px]">
+                <div className="relative w-[1040px] h-[316px]">
+                  <p className="absolute w-[1040px] top-0 left-0 [font-family:'Poppins-Medium',Helvetica] font-medium text-black text-[40px] tracking-[-0.80px] leading-[64px]">
+                    Eduo is one of the best tools I’ve utilized to teach my classes. It helps me to focus on what really
+                    matters for my students.
+                  </p>
+                  <div className="absolute w-[1018px] h-[100px] top-[216px] left-0">
+                    <p className="absolute w-[888px] top-[14px] left-[128px] [font-family:'Poppins-Bold',Helvetica] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
+                      <span className="font-bold">
+                        Alexa
+                        <br />
+                      </span>
+                      <span className="[font-family:'Poppins-Medium',Helvetica] font-medium">
+                        Teacher at Collegiate Academy of Seoul
+                      </span>
+                    </p>
+                    <div className="inline-flex flex-col items-center justify-center gap-[10px] absolute top-0 left-0">
+                      <div className="relative w-[100.1px] h-[100px] bg-[#d9d9d9] rounded-[50.05px/50px]" />
+                      <img
+                        className="absolute w-[100px] h-[100px] top-0 left-0 object-cover"
+                        alt="Element"
+                        src="/images/hero/user1.png"
+                      />
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div className="absolute w-[1048px] h-[383px] top-[765px] left-[369px]">
+                <p className="absolute w-[1040px] top-0 left-0 [font-family:'Poppins-Medium',Helvetica] font-medium text-black text-[40px] tracking-[-0.80px] leading-[64px]">
+                  Eduo is easy to navigate even for those who are not used to using these tools. It helped our school
+                  become digitized and efficient by optimizing administrative tasks.
+                </p>
+                <p className="absolute w-[910px] top-[297px] left-[134px] [font-family:'Poppins-Bold',Helvetica] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
+                  <span className="font-bold">
+                    Tim
+                    <br />
+                  </span>
+                  <span className="[font-family:'Poppins-Medium',Helvetica] font-medium">
+                    Principal at Azabu Christian Academy
+                  </span>
+                </p>
+                <img
+                  className="absolute w-[100px] h-[100px] top-[283px] left-0"
+                  alt="Mask group"
+                  src="/images/hero/user2.png"
+                />
               </div>
             </div>
           </div>
-        </div>
-        <div className="absolute w-[1923px] h-[1670px] top-[5230px] left-0">
-          <div className="absolute w-[1922px] h-[1380px] top-0 left-px">
-            <div className="relative h-[1382px] -top-px -left-px bg-[#f0f0f0]">
-          <div className="absolute top-[91px] left-[241px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-black text-[48px] tracking-[0] leading-[normal]">
-            Success Stories
-          </div>
-          <img
-            className="top-[211px] left-[396px] absolute w-[200px] h-[160px] object-cover"
-            alt="Img"
-            src="images/hero/start.png"
-          />
-          <img
-            className="top-[721px] left-[1421px] absolute w-[200px] h-[160px] object-cover"
-            alt="Img"
-            src="images/hero/end.png"
-          />
-          <div className="absolute w-[1044px] h-[316px] top-[291px] left-[640px]">
-            <div className="relative w-[1040px] h-[316px]">
-              <p className="absolute w-[1040px] top-0 left-0 [font-family:'Poppins-Medium',Helvetica] font-medium text-black text-[40px] tracking-[-0.80px] leading-[64px]">
-                Eduo is one of the best tools I’ve utilized to teach my classes. It helps me to focus on what really
-                matters for my students.
-              </p>
-              <p className="absolute w-[888px] top-[230px] left-[129px] [font-family:'Poppins-Bold',Helvetica] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
-                <span className="font-bold">
-                  Alexa
-                  <br />
-                </span>
-                <span className="[font-family:'Poppins-Medium',Helvetica] font-medium">
-                  Teacher at Collegiate Academy of Seoul
-                </span>
-              </p>
-              <div className="absolute w-[100px] h-[100px] top-[216px] left-0 bg-[#d9d9d9] rounded-[50px]" />
-            </div>
-          </div>
-          <div className="absolute w-[1048px] h-[382px] top-[766px] left-[368px]">
-            <p className="absolute w-[1041px] top-0 left-0 [font-family:'Poppins-Medium',Helvetica] font-medium text-black text-[40px] tracking-[-0.80px] leading-[64px]">
-              Eduo is easy to navigate even for those who are not used to using these tools. It helped our school become
-              digitized and efficient by optimizing administrative tasks.
-            </p>
-            <p className="absolute w-[910px] top-[296px] left-[134px] [font-family:'Poppins-Bold',Helvetica] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
-              <span className="font-bold">
-                Tim
-                <br />
-              </span>
-              <span className="[font-family:'Poppins-Medium',Helvetica] font-medium">
-                Principal at Azabu Christian Academy
-              </span>
-            </p>
-            <div className="absolute w-[100px] h-[100px] top-[282px] left-0 bg-[#d9d9d9] rounded-[50.05px/50px]" />
-          </div>
-        </div>
-          </div>
-          <div className="absolute w-[1920px] h-[460px] top-[1290px] left-0">
+          <div className="absolute w-[1920px] h-[460px] top-[1288px] left-0">
             <div className="absolute w-[1922px] h-[360px] top-[100px] left-0">
               <div className="relative w-[1920px] h-[360px] bg-white">
                 <img
