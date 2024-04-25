@@ -231,7 +231,7 @@ const Hero = () => {
                 SIS
               </div>
               <p className="absolute w-[320px] top-[320px] left-[20px] [font-family:'Poppins-Regular',Helvetica] font-normal text-black text-[16px] text-center tracking-[0] leading-[30px]">
-                Essential tools for efficient school<br/> operations at your fingertips
+                Essential tools for efficient school operations at your fingertips
               </p>
               <img
                 className="absolute w-[200px] h-[108px] !left-[80px] !top-[93px] object-cover"
@@ -250,7 +250,7 @@ const Hero = () => {
                 College Counseling
               </div>
               <p className="left-[23px] absolute w-[320px] top-[320px] [font-family:'Poppins-Regular',Helvetica] font-normal text-black text-[16px] text-center tracking-[0] leading-[30px]">
-                Systematic counseling support through<br/> accumulated admissions data
+                Systematic counseling support through accumulated admissions data
               </p>
               <img
                 className="absolute w-[200px] h-[200px] top-[28px] left-[80px] object-cover"
@@ -273,7 +273,7 @@ const Hero = () => {
                 LMS
               </div>
               <p className="left-[20px] absolute w-[320px] top-[320px] [font-family:'Poppins-Regular',Helvetica] font-normal text-black text-[16px] text-center tracking-[0] leading-[30px]">
-                Accredited courses prepared and<br/> taught by qualified instructors
+                Accredited courses prepared and taught by qualified instructors
               </p>
             </div>
           </div>
@@ -299,13 +299,13 @@ const Hero = () => {
               For Administrators
             </div>
             <p className="absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              Faculty and student database
+              • Faculty and student database
               <br />
-              Administrative documents
+              • Administrative documents
               <br />
-              Scheduling
+              • Scheduling
               <br />
-              Automated transcripts
+              • Automated transcripts
             </p>
             <img
                       className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
@@ -319,13 +319,13 @@ const Hero = () => {
               For Teachers
             </div>
             <p className="absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              Lesson planning support
+              • Lesson planning support
               <br />
-              Tracking student progress
+              • Tracking student progress
               <br />
-              Question generator
+              • Question generator
               <br />
-              Attendance management
+              • Attendance management
             </p>
             <img
                   className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
@@ -339,13 +339,13 @@ const Hero = () => {
               For Students
             </div>
             <p className="w-[463px] absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              Comprehensive workspace
+              • Comprehensive workspace
               <br />
-              Discussion board
+              • Discussion board
               <br />
-              Video lectures with distraction prevention
+              • Video lectures with distraction prevention
               <br />
-              College &amp; career counseling
+              • College &amp; career counseling
             </p>
             {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="group.svg" /> */}
             <img
@@ -359,10 +359,10 @@ const Hero = () => {
               For Parents
             </div>
             <p className="w-[463px] absolute top-[44px] left-[42px] [font-family:'Poppins-SemiBold',Helvetica] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              Check tuition and invoice <br />
-              View grades and homework <br />
-              Monitor attendance and discipline <br />
-              Access calendar and other resources
+              • Check tuition and invoice <br />
+              • View grades and homework <br />
+              • Monitor attendance and discipline <br />
+              • Access calendar and other resources
             </p>
             {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="image.svg" /> */}
             <img
@@ -446,8 +446,7 @@ const Hero = () => {
               </div>
               <div className="absolute w-[1048px] h-[383px] top-[765px] left-[369px]">
                 <p className="absolute w-[1040px] top-0 left-0 [font-family:'Poppins',Helvetica] font-medium text-black text-[40px] tracking-[-0.80px] leading-[64px]">
-                  Eduo is easy to navigate even for those who are not used to using these tools. It helped our school
-                  become digitized and efficient by optimizing administrative tasks.
+                  Eduo is easy to navigate even for those who are<br/> new to digital tools. It helped our school maximize efficiency by digitizing records and optimizing administrative tasks.
                 </p>
                 <p className="absolute w-[910px] top-[297px] left-[134px] [font-family:'Poppins-Bold',Helvetica] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
                   <span className="font-bold">
