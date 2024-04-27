@@ -20,7 +20,12 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+      </head>
 
       <body className={`bg-white ${inter.className}`}>
         <Providers>
