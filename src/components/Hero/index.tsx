@@ -32,8 +32,6 @@ import Wave2 from "/public/images/hero/wave_2.png";
 
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
-
-  let ourClients = "TESTEST";
   return (
     <div className="flex w-full flex-row flex-nowrap justify-center overflow-x-auto bg-white">
       <ModalVideo
