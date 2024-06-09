@@ -1,13 +1,5 @@
 "use client";
 import React, { useState } from "react";
-// import { ButtonSolidStyle } from "./ButtonSolidStyle";
-// import { DateRange } from "./DateRange";
-// import { DivWrapper } from "./DivWrapper";
-// import { DoneAllAltRound } from "./DoneAllAltRound";
-// import { FoldersGroupFill } from "./FoldersGroupFill";
-// import { Group } from "./Group";
-// import { Saly } from "./Saly";
-// import { SalyWrapper } from "./SalyWrapper";
 import Link from "next/link";
 import Image from "next/image";
 import ModalVideo from "react-modal-video";
@@ -45,30 +37,6 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-
-            {/* <div className="relative h-[800px] top-[350px] bg-[url(/images/hero/Background.png)] bg-cover bg-[50%_50%]">
-              <img
-                className="absolute w-[546px] h-[596px] top-[106px] left-[1009px] object-cover"
-                alt="Schoolgirl online"
-                src="/images/hero/hero1.png"
-              />
-              <div className="absolute w-[821px] h-[391px] top-[241px] left-[278px]">
-                <div className="relative h-[391px]">
-                  <p className="absolute w-[568px] top-[38px] left-0 [font-family:'Poppins-SemiBold',Helvetica] font-normal text-white text-[64px] leading-[64px]">
-                    <span className="font-semibold tracking-[-1.28px] leading-[68px]">
-                      Transform your school with Eduo:
-                    </span>
-                    <span className="[font-family:'Poppins',Helvetica] font-medium tracking-[-1.28px] leading-[68px]">
-                      {" "}
-                      <br />
-                    </span>
-                    <span className="[font-family:'Poppins',Helvetica] font-medium text-[32px] tracking-[-0.32px]">
-                      a single solution designed to<br/> streamline administrative processes<br/> and enhance learning outcomes
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="absolute left-0 top-[800px] h-[800px] w-[1922px]">
@@ -107,16 +75,6 @@ const Hero = () => {
                 Strong STEM, AP curriculum
               </div>
             </div>
-            {/* <div className="absolute w-[492px] h-[44px] top-[497px] left-[423px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <p className="absolute w-[438px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Distinct features for administrators, teachers, students, and parents
-              </p>
-            </div> */}
             <div className="absolute left-[423px] top-[589px] h-[44px] w-[492px]">
               <img
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
@@ -246,7 +204,6 @@ const Hero = () => {
                 alt="Students discussion"
                 src="/images/hero/saly_1.png"
               />
-              {/* <Saly className="!absolute !left-[80px] !top-[93px]" /> */}
             </div>
           </div>
           <div className="absolute left-[1176px] top-[234px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
@@ -321,7 +278,6 @@ const Hero = () => {
                   alt="Image"
                   src="/images/hero/Book_check.png"
                 />
-                {/* <BookCheck className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
               </div>
               <div className="absolute left-[1048px] top-[1442px] h-[152px] w-[383px]">
                 <div className="absolute left-[56px] top-0 whitespace-nowrap text-[24px] font-bold leading-[32px] tracking-[0] text-white [font-family:'Poppins']">
@@ -340,7 +296,6 @@ const Hero = () => {
                   alt="Image"
                   src="/images/hero/Sertificate.png"
                 />
-                {/* <Sertificate className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
               </div>
               <div className="absolute left-[489px] top-[1721px] h-[152px] w-[383px]">
                 <div className="absolute left-[56px] top-0 whitespace-nowrap text-[24px] font-bold leading-[32px] tracking-[0] text-white [font-family:'Poppins']">
@@ -354,7 +309,6 @@ const Hero = () => {
                   • Video lectures with distraction prevention
                   <br />• College &amp; career counseling
                 </p>
-                {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="group.svg" /> */}
                 <img
                   className="!absolute !left-0 !top-0 !h-[40px] !w-[40px]"
                   alt="Image"
@@ -371,7 +325,6 @@ const Hero = () => {
                   • Monitor attendance and discipline <br />• Access calendar
                   and other resources
                 </p>
-                {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="image.svg" /> */}
                 <img
                   className="!absolute !left-0 !top-0 !h-[40px] !w-[40px]"
                   alt="Image"
@@ -384,7 +337,6 @@ const Hero = () => {
               <p className="absolute left-[597px] top-[1232px] whitespace-nowrap text-center text-[32px] font-semibold leading-[58px] tracking-[0] text-white [font-family:'Poppins']">
                 We provide the solution to all your problems.
               </p>
-              {/* <img className="absolute w-[160px] h-px top-[1352px] left-[880px]" alt="Line" src="line-8.svg" /> */}
               <div
                 onClick={() => {
                   setOpen(true);
@@ -553,15 +505,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// import React from "react";
-// import { BookCheck } from "./BookCheck";
-// import { Group } from "./Group";
-// import { Saly } from "./Saly";
-// import { Sertificate } from "./Sertificate";
-
-// export const EduoWebLanding = (): JSX.Element => {
-//   return (
-
-//   );
-// };
