@@ -3,8 +3,37 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ModalVideo from "react-modal-video";
+
+// import images to use 'Image' tag
+import Hero1 from "/public/images/hero/hero1.png";
+import Done_all_alt_round_fill from "/public/images/hero/Done_all_alt_round_fill.png";
+import Client1 from "/public/images/hero/client1.png";
+import Client2 from "/public/images/hero/client2.png";
+import Client3 from "/public/images/hero/client3.png";
+import Client4 from "/public/images/hero/client4.png";
+import Client5 from "/public/images/hero/client5.png";
+import Client6 from "/public/images/hero/client6.png";
+import Client7 from "/public/images/hero/client7.png";
+import Saly_1 from "/public/images/hero/saly_1.png";
+import Saly_2 from "/public/images/hero/saly_2.png";
+import Saly_3 from "/public/images/hero/saly_3.png";
+import EDUO_LOGO from "/public/images/logo/EDUO_LOGO.png";
+import Book_check from "/public/images/hero/Book_check.png";
+import Certificate from "/public/images/hero/Certificate.png";
+import Group from "/public/images/hero/Group.png";
+import Button from "/public/images/hero/Button.png";
+import Line from "/public/images/hero/Line.png";
+import CAS from "/public/images/hero/CAS.png";
+import Start from "/public/images/hero/start.png";
+import End from "/public/images/hero/end.png";
+import User1 from "/public/images/hero/user1.png";
+import User2 from "/public/images/hero/user2.png";
+import Wave2 from "/public/images/hero/wave_2.png";
+
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
+
+  let ourClients = "TESTEST";
   return (
     <div className="flex w-full flex-row flex-nowrap justify-center overflow-x-auto bg-white">
       <ModalVideo
@@ -20,10 +49,10 @@ const Hero = () => {
         <div className="absolute left-0 top-[-350px] h-[1150px] w-[1920px]">
           <div className="absolute left-0 top-0 h-[1150px] w-[1920px]">
             <div className="relative top-[350px] h-[800px] bg-[url(/images/hero/Background.png)] bg-cover bg-[50%_50%]">
-              <img
+              <Image
                 className="absolute left-[1230px] top-[106px] h-[596px] w-[546px] object-cover"
                 alt="Schoolgirl online"
-                src="/images/hero/hero1.png"
+                src={Hero1}
               />
               <div className="absolute left-[230px] top-[296px] h-[372px] w-[1000px]">
                 <p className="absolute left-0 top-[28px] w-[1000px] text-[60px] font-normal leading-[60px] text-white [font-family:Poppins]">
@@ -46,40 +75,40 @@ const Hero = () => {
               <br /> our all-in-one education platform
             </p>
             <div className="absolute left-[423px] top-[372px] h-[44px] w-[325px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <div className="absolute left-[52px] top-[4px] w-[271px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 Access anytime, anywhere
               </div>
             </div>
             <div className="absolute left-[423px] top-[444px] h-[44px] w-[492px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <p className="absolute left-[52px] top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 Regular updates
               </p>
             </div>
             <div className="absolute left-[423px] top-[517px] h-[44px] w-[492px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <div className="absolute left-[52px] top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 Strong STEM, AP curriculum
               </div>
             </div>
             <div className="absolute left-[423px] top-[589px] h-[44px] w-[492px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <p className="absolute left-[52px] top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 Distinct features for administrators,
@@ -87,40 +116,40 @@ const Hero = () => {
               </p>
             </div>
             <div className="absolute left-[1007px] top-[372px] h-[44px] w-[629px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <p className="absolute left-[52px] top-[4px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 Intuitive and easy to use
               </p>
             </div>
             <div className="absolute left-[1007px] top-[444px] h-[44px] w-[492px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <p className="absolute left-[52px] top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 Affordable
               </p>
             </div>
             <div className="absolute left-[1007px] top-[517px] h-[44px] w-[492px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <div className="absolute left-[52px] top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 Made by teachers
               </div>
             </div>
             <div className="absolute left-[1007px] top-[589px] h-[44px] w-[492px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[44px] w-[40px]"
                 alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
+                src={Done_all_alt_round_fill}
               />
               <div className="absolute left-[52px] top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins']">
                 K-Education touches
@@ -136,41 +165,40 @@ const Hero = () => {
               </div>
             </div>
             <div className="relative ml-[-144.00px] mr-[-144.00px] h-[117.46px] w-[1440px]">
-              <img
+              <Image
                 className="absolute left-0 top-0 h-[117px] w-[117px]"
-                alt="Collegiate academy"
-                src="/images/hero/client1.png"
+                alt="Image"
+                src={Client1}
               />
-              <img
+              <Image
                 className="absolute left-[155px] top-[32px] h-[54px] w-[174px]"
-                alt="Logo daum"
-                src="/images/hero/client2.png"
+                alt="Image"
+                src={Client2}
               />
-              <img
+              <Image
                 className="absolute left-[366px] top-0 h-[117px] w-[117px]"
                 alt="Image"
-                src="/images/hero/client3.png"
+                src={Client3}
               />
-              <img
+              <Image
                 className="absolute left-[522px] top-0 h-[117px] w-[155px] object-cover"
-                alt="Screen shot"
-                src="/images/hero/client4.png"
+                alt="Image"
+                src={Client4}
               />
-              <img
+              <Image
                 className="absolute left-[714px] top-0 h-[117px] w-[148px] object-cover"
-                alt="Screen shot"
-                src="/images/hero/client5.png"
+                alt="Image"
+                src={Client5}
               />
-              <img
+              <Image
                 className="absolute left-[1130px] top-[32px] h-[54px] w-[310px]"
-                alt="Kakaotalk photo"
-                src="/images/hero/client7.png"
+                alt="Image"
+                src={Client6}
               />
-
-              <img
+              <Image
                 className="absolute left-[900px] top-[32px] h-[54px] w-[193px] object-cover"
                 alt="Image"
-                src="/images/hero/client6.png"
+                src={Client7}
               />
             </div>
           </div>
@@ -199,10 +227,10 @@ const Hero = () => {
                 Essential tools for efficient school
                 <br /> operations at your fingertips
               </p>
-              <img
+              <Image
                 className="absolute !left-[80px] !top-[93px] h-[108px] w-[200px] object-cover"
-                alt="Students discussion"
-                src="/images/hero/saly_1.png"
+                alt="Saly"
+                src={Saly_1}
               />
             </div>
           </div>
@@ -218,10 +246,10 @@ const Hero = () => {
                 Systematic counseling support through accumulated admissions
                 data
               </p>
-              <img
+              <Image
                 className="absolute left-[80px] top-[28px] h-[200px] w-[200px] object-cover"
-                alt="Students discussion"
-                src="/images/hero/saly_3.png"
+                alt="Saly"
+                src={Saly_2}
               />
             </div>
           </div>
@@ -230,10 +258,10 @@ const Hero = () => {
               <div className="absolute left-0 top-0 h-[440px] w-[360px]">
                 <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
               </div>
-              <img
+              <Image
                 className="absolute left-[100px] top-[48px] h-[200px] w-[160px] object-cover"
                 alt="Saly"
-                src="/images/hero/saly_2.png"
+                src={Saly_3}
               />
               <div className="absolute left-[157px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                 LMS
@@ -252,10 +280,10 @@ const Hero = () => {
                 <div className="absolute left-0 top-0 w-[455px] text-[48px] font-semibold leading-[50.4px] tracking-[0] text-black [font-family:'Poppins']">
                   A Sneak Peek into
                 </div>
-                <img
+                <Image
                   className="absolute left-[446px] top-0 h-[44px] w-[132px] object-cover"
                   alt="Image"
-                  src="/images/logo/EDUO_LOGO.png"
+                  src={EDUO_LOGO}
                 />
               </div>
             </div>
@@ -273,10 +301,10 @@ const Hero = () => {
                   • Scheduling
                   <br />• Automated transcripts
                 </p>
-                <img
+                <Image
                   className="!absolute !left-0 !top-0 !h-[40px] !w-[40px]"
                   alt="Image"
-                  src="/images/hero/Book_check.png"
+                  src={Book_check}
                 />
               </div>
               <div className="absolute left-[1048px] top-[1442px] h-[152px] w-[383px]">
@@ -291,10 +319,10 @@ const Hero = () => {
                   • Question generator
                   <br />• Attendance management
                 </p>
-                <img
+                <Image
                   className="!absolute !left-0 !top-0 !h-[40px] !w-[40px]"
                   alt="Image"
-                  src="/images/hero/Sertificate.png"
+                  src={Certificate}
                 />
               </div>
               <div className="absolute left-[489px] top-[1721px] h-[152px] w-[383px]">
@@ -309,10 +337,10 @@ const Hero = () => {
                   • Video lectures with distraction prevention
                   <br />• College &amp; career counseling
                 </p>
-                <img
+                <Image
                   className="!absolute !left-0 !top-0 !h-[40px] !w-[40px]"
                   alt="Image"
-                  src="/images/hero/Group.png"
+                  src={Group}
                 />
               </div>
               <div className="absolute left-[1048px] top-[1721px] h-[152px] w-[383px]">
@@ -325,10 +353,10 @@ const Hero = () => {
                   • Monitor attendance and discipline <br />• Access calendar
                   and other resources
                 </p>
-                <img
+                <Image
                   className="!absolute !left-0 !top-0 !h-[40px] !w-[40px]"
                   alt="Image"
-                  src="/images/hero/Group.png"
+                  src={Group}
                 />
               </div>
               <div className="absolute left-[823px] top-[1162px] whitespace-nowrap text-center text-[48px] font-extrabold leading-[58px] tracking-[0] text-white [font-family:'Poppins']">
@@ -343,16 +371,16 @@ const Hero = () => {
                 }}
                 className="absolute left-[490px] top-[542px] h-[540px] w-[940px] cursor-pointer bg-[url(/images/hero/image23.png)] bg-[100%_100%]"
               >
-                <img
+                <Image
                   className="  absolute left-[349px] top-[171px] h-[242px] w-[242px]"
                   alt="Button"
-                  src="/images/hero/Button.png"
+                  src={Button}
                 />
               </div>
-              <img
+              <Image
                 className="absolute left-[880px] top-[1352px] h-px w-[160px]"
                 alt="Button play"
-                src="images/hero/Line.png"
+                src={Line}
               />
               <div className="absolute left-[802px] top-[2038px] w-[317px] text-center text-[32px] font-semibold leading-[normal] tracking-[0] text-white [font-family:'Poppins']">
                 ...and more!
@@ -360,10 +388,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="absolute left-[490px] top-[278px] flex w-[940px] flex-wrap items-center justify-center gap-[36px] overflow-hidden rounded-[20px] bg-white p-[40px] shadow-[0px_0px_9px_2px_#0000000d]">
-            <img
+            <Image
               className="relative mt-[-4.00px] h-[608px] w-[848px] object-cover"
               alt="Cas"
-              src="/images/hero/CAS.png"
+              src={CAS}
             />
             <div className="relative h-[48px] w-[473px] text-[32px] font-semibold leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
               Collegiate Academy of Seoul
@@ -377,15 +405,15 @@ const Hero = () => {
               <div className="absolute left-[242px] top-[91px] w-[380px] text-[48px] font-semibold leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                 Success Stories
               </div>
-              <img
+              <Image
                 className="absolute left-[397px] top-[231px] h-[160px] w-[200px] object-cover"
                 alt="Img"
-                src="images/hero/start.png"
+                src={Start}
               />
-              <img
+              <Image
                 className="absolute left-[1421px] top-[721px] h-[160px] w-[200px] object-cover"
                 alt="Img"
-                src="images/hero/end.png"
+                src={End}
               />
               <div className="absolute left-[641px] top-[311px] h-[316px] w-[1042px]">
                 <div className="relative h-[316px] w-[1040px]">
@@ -406,10 +434,10 @@ const Hero = () => {
                     </p>
                     <div className="absolute left-0 top-0 inline-flex flex-col items-center justify-center gap-[10px]">
                       <div className="relative h-[100px] w-[100.1px] rounded-[50.05px/50px] bg-[#d9d9d9]" />
-                      <img
+                      <Image
                         className="absolute left-0 top-0 h-[100px] w-[100px] object-cover"
                         alt="Element"
-                        src="/images/hero/user1.png"
+                        src={User1}
                       />
                     </div>
                   </div>
@@ -431,10 +459,10 @@ const Hero = () => {
                     Principal at Azabu Christian Academy
                   </span>
                 </p>
-                <img
+                <Image
                   className="absolute left-0 top-[283px] h-[100px] w-[100px]"
                   alt="Mask group"
-                  src="/images/hero/user2.png"
+                  src={User2}
                 />
               </div>
             </div>
@@ -442,10 +470,10 @@ const Hero = () => {
           <div className="absolute left-0 top-[1288px] h-[460px] w-[1920px]">
             <div className="absolute left-0 top-[100px] h-[360px] w-[1922px]">
               <div className="relative h-[360px] w-[1920px] bg-white">
-                <img
+                <Image
                   className="absolute left-[165px] top-[80px] h-[76px] w-[228px] object-cover"
                   alt="Image"
-                  src="/images/logo/EDUO_LOGO.png"
+                  src={EDUO_LOGO}
                 />
                 <p className="absolute left-[166px] top-[180px] text-[16px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                   Copyright © 2024 Eduo Learning
@@ -492,10 +520,10 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <img
+            <Image
               className="absolute left-0 top-0 h-[100px] w-[1920px]"
               alt="Wave"
-              src="/images/hero/wave_2.png"
+              src={Wave2}
             />
           </div>
         </div>
