@@ -14,24 +14,14 @@ module.exports = {
       padding: "1rem",
     },
 
+    // JH: Set custom responsive breakpoints
     screens: {
-      xs: "450px",
-      // => @media (min-width: 450px) { ... }
-
-      sm: "575px",
-      // => @media (min-width: 576px) { ... }
-
+      sm: "640px",
       md: "768px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "992px",
-      // => @media (min-width: 992px) { ... }
-
-      xl: "1200px",
-      // => @media (min-width: 1200px) { ... }
-
-      "2xl": "1920px",
-      // => @media (min-width: 1920px) { ... }
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "3xl": "1920px",
     },
     extend: {
       colors: {
