@@ -55,7 +55,6 @@ const Header = () => {
       behavior: "smooth",
     });
   };
-  
 
   const usePathName = usePathname();
 
@@ -68,54 +67,36 @@ const Header = () => {
             : "absolute bg-transparent"
         }`}
       >
-        
-        {/* <div className="relative -mx-4 flex items-center justify-between">
-          <div className="relative w-full h-[84px]">
-            <div className="absolute w-[146px] h-[24px] top-[30px] left-[1480px]">
-              <div className="inline-flex items-center justify-center gap-[50px] relative">
-                <div className="inline-flex items-center gap-[10px] relative flex-[0_0_auto]">
-                  <div onClick={scrollToTop} className={`cursor-pointer relative w-fit mt-[-1.00px] [font-family:'Poppins-Medium',Helvetica] font-medium ${sticky ?"text-black": "text-white"} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}>
-                    Home
-                  </div>
+        <div className="relative flex h-20 w-full max-w-screen-2xl items-center justify-between px-4">
+          <div className="flex w-full items-center justify-between ">
+            <div
+              className="ml-20 h-10 w-[120px] bg-cover bg-center"
+              style={{ backgroundImage: "url(/images/logo/EDUO_LOGO.png)" }}
+            ></div>
+            <div className="flex w-1/4 items-center justify-end">
+              <div className="flex ">
+                <div
+                  onClick={scrollToTop}
+                  className={`cursor-pointer font-medium sm:text-black lg:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
+                >
+                  Home
                 </div>
-                <div className="inline-flex items-center gap-[10px] relative flex-[0_0_auto]">
-                  <div onClick={scrollToTop2}  className={`cursor-pointer relative w-fit mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal ${sticky ?"text-black": "text-white"} text-[16px] tracking-[0] leading-[24px] whitespace-nowrap`}>
-                    About
-                  </div>
+                <div
+                  onClick={scrollToTop2}
+                  className={`cursor-pointer font-normal sm:text-black lg:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
+                >
+                  About
                 </div>
               </div>
-            </div>
-            <div className="inline-flex items-start gap-[14px] absolute top-[22px] left-[1676px]">
-              <button onClick={scrollToTop3}  className="all-[unset] box-border flex w-[100px] items-center justify-center gap-[10px] px-0 py-[10px] relative bg-[#f54b4b] rounded-[6px]">
-                <div className="relative w-fit mt-[-1.00px] [font-family:'Poppins-Medium',Helvetica] font-medium text-white text-[16px] text-center tracking-[0] leading-[20px] whitespace-nowrap">
-                  Contact
-                </div>
+              <button
+                onClick={scrollToTop3}
+                className="mr-10 rounded-lg bg-red-500 px-4 py-2 text-lg font-medium text-white"
+              >
+                Contact
               </button>
             </div>
-              <div className="absolute w-[120px] h-[40px] top-[22px] left-[144px] object-cover  bg-[url(/images/logo/EDUO_LOGO.png)] bg-cover" />              
-          </div>
-        </div> */}
-       <div className="relative flex items-center justify-between w-full max-w-screen-2xl h-20 px-4">
-        <div className="flex items-center justify-between w-full ">
-          <div className="bg-cover bg-center w-[120px] h-10 ml-20" style={{ backgroundImage: "url(/images/logo/EDUO_LOGO.png)" }}></div>
-          <div className="flex w-1/4 justify-end items-center">
-          <div className="flex ">
-            <div onClick={scrollToTop} className={`cursor-pointer font-medium ${sticky ? "text-black" : "text-white"} text-lg mr-10`}>
-              Home
-            </div>
-            <div onClick={scrollToTop2} className={`cursor-pointer font-normal ${sticky ? "text-black" : "text-white"} text-lg mr-10`}>
-              About
-            </div>
-          </div>
-          <button onClick={scrollToTop3} className="px-4 py-2 bg-red-500 rounded-lg text-white text-lg font-medium mr-10">
-            Contact
-          </button>
           </div>
         </div>
-        
-      </div>
-
-
       </header>
     </>
   );
