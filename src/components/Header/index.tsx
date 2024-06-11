@@ -22,9 +22,25 @@ const Header = () => {
       setSticky(false);
     }
   };
+
+  const handleResize = () => {
+    const width = window.innerWidth;
+    if (width < 1280) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  const [isInit, setInit] = useState(false);
   useEffect(() => {
+    if (!isInit) {
+      setInit(true);
+      handleResize();
+    }
     window.addEventListener("scroll", handleStickyNavbar);
-  });
+    window.addEventListener("resize", handleResize);
+  }, [isInit]);
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
@@ -77,13 +93,13 @@ const Header = () => {
               <div className="flex ">
                 <div
                   onClick={scrollToTop}
-                  className={`cursor-pointer font-medium sm:text-black xl:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
+                  className={`cursor-pointer font-medium ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
                 >
                   Home
                 </div>
                 <div
                   onClick={scrollToTop2}
-                  className={`cursor-pointer font-normal sm:text-black xl:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
+                  className={`cursor-pointer font-normal ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
                 >
                   About
                 </div>
