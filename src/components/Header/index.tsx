@@ -77,13 +77,13 @@ const Header = () => {
               <div className="flex ">
                 <div
                   onClick={scrollToTop}
-                  className={`cursor-pointer font-medium sm:text-black lg:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
+                  className={`cursor-pointer font-medium sm:text-black xl:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
                 >
                   Home
                 </div>
                 <div
                   onClick={scrollToTop2}
-                  className={`cursor-pointer font-normal sm:text-black lg:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
+                  className={`cursor-pointer font-normal sm:text-black xl:text-white ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
                 >
                   About
                 </div>
