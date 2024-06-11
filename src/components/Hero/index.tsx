@@ -33,7 +33,7 @@ import Wave2 from "/public/images/hero/wave_2.png";
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <div className="flex w-full flex-row flex-nowrap justify-center overflow-x-auto bg-white">
+    <div className="flex w-full flex-nowrap justify-center overflow-x-auto bg-white">
       <ModalVideo
         channel="custom"
         autoplay={true}
@@ -44,20 +44,20 @@ const Hero = () => {
         onClose={() => setOpen(false)}
       />
       <div className="relative h-[7460px] w-[1920px] overflow-hidden overflow-x-auto bg-white">
-        <div className="absolute left-0 top-[-350px] h-[1150px] w-[1920px]">
-          <div className="absolute left-0 top-0 h-[1150px] w-[1920px]">
-            <div className="relative top-[350px] h-[800px] bg-[url(/images/hero/Background.png)] bg-cover bg-[50%_50%]">
+        <div className="absolute inset-0 h-[1150px] w-[1920px] sm:top-[-265px] xl:top-[-350px]">
+          <div className="relative flex w-screen flex-col bg-[url(/images/hero/Background.png)] bg-cover bg-center bg-no-repeat sm:top-[350px] sm:h-[1000px] xl:h-[800px] xl:bg-[100%_100%]">
+            <div className="inset-0 flex flex-col items-center justify-center">
               <Image
-                className="absolute left-[1230px] top-[106px] h-[596px] w-[546px] object-cover"
+                className="3xl:left-[1230px] absolute object-cover object-center sm:top-[450px] sm:top-[506px] sm:h-[447px] sm:w-[409.5px] xl:left-[60%] xl:top-[206px] 2xl:left-[55%] 2xl:top-[106px] 2xl:h-[596px] 2xl:w-[546px]"
                 alt="Schoolgirl online"
                 src={Hero1}
               />
-              <div className="absolute left-[230px] top-[296px] h-[372px] w-[1000px]">
-                <p className="absolute left-0 top-[28px] w-[1000px] text-[60px] font-normal leading-[60px] text-white [font-family:Poppins]">
+              <div className="flex h-[372px] w-[1000px] flex-col items-center justify-center sm:top-[60px] sm:h-[500px] xl:absolute xl:left-[10%] xl:top-[256px]">
+                <p className="3xl:w-[1000px] left-0 text-[60px] font-normal leading-[60px] text-white [font-family:Poppins] sm:w-[600px] md:w-[700px] xl:absolute xl:top-[28px] xl:w-[600px]">
                   <span className="font-semibold leading-[68px] tracking-[-1.20px]">
                     Transform your school with Eduo: <br />
                   </span>
-                  <span className="text-[32px] font-medium leading-[64px] tracking-[-0.32px] [font-family:'Poppins']">
+                  <span className="text-[32px] font-medium leading-[32px] tracking-[-0.32px] [font-family:'Poppins']">
                     a single solution designed to streamline administrative
                     processes and enhance learning outcomes
                   </span>
@@ -66,7 +66,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-0 top-[800px] h-[800px] w-[1922px]">
+        <div className="absolute left-0 h-[800px] w-[1922px] sm:top-[1100px] xl:top-[800px]">
           <div className="relative h-[800px] w-[1920px] bg-white">
             <p className="absolute left-[416px] top-[132px] w-[1088px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins']">
               Empower your educators and inspire your students with
