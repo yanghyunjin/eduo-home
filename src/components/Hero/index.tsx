@@ -44,11 +44,12 @@ const Hero = () => {
         onClose={() => setOpen(false)}
       />
       <div className="relative h-[7460px] w-[1920px] overflow-hidden overflow-x-auto bg-white">
+        {/* Section #1 */}
         <div className="absolute inset-0 h-[1150px] w-[1920px] sm:top-[-265px] xl:top-[-350px]">
           <div className="relative flex w-screen flex-col bg-[url(/images/hero/Background.png)] bg-cover bg-center bg-no-repeat sm:top-[350px] sm:h-[1000px] xl:h-[800px] xl:bg-[100%_100%]">
             <div className="inset-0 flex flex-col items-center justify-center">
               <Image
-                className="3xl:left-[1230px] absolute object-cover object-center sm:top-[450px] sm:top-[506px] sm:h-[447px] sm:w-[409.5px] xl:left-[60%] xl:top-[206px] 2xl:left-[55%] 2xl:top-[106px] 2xl:h-[596px] 2xl:w-[546px]"
+                className="3xl:left-[1230px] absolute object-cover object-center sm:top-[440px] sm:top-[506px] sm:h-[447px] sm:w-[409.5px] xl:left-[60%] xl:top-[206px] 2xl:left-[55%] 2xl:top-[106px] 2xl:h-[596px] 2xl:w-[546px]"
                 alt="Schoolgirl online"
                 src={Hero1}
               />
@@ -66,6 +67,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Section #2 */}
         <div className="absolute left-0 h-[800px] w-[1922px] sm:top-[1100px] xl:top-[800px]">
           <div className="relative h-[800px] w-[1920px] bg-white">
             <p className="absolute left-[416px] top-[132px] w-[1088px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins']">
@@ -155,6 +158,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Section #3 */}
         <div className="absolute left-0 top-[5252px] h-[460px] w-[1920px] bg-white">
           <div className="relative left-[240px] top-[107px] flex h-[244px] w-[1440px] flex-col items-center gap-[64px] px-[144px] py-0">
             <div className="relative flex w-[1110px] flex-[0_0_auto] flex-col items-center gap-[8px]">
@@ -201,6 +206,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Section #4 */}
         <div className="absolute left-0 top-[1600px] h-[762px] w-[1920px] bg-[#f6f4ff]">
           <div className="absolute left-[589px] top-[60px] h-[155px] w-[742px] overflow-hidden">
             <p className="absolute left-[3px] top-[68px] w-[736px] text-center text-[20px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
@@ -271,6 +278,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Section #5 */}
         <div className="absolute left-0 top-[2362px] h-[2890px] w-[1920px]">
           <div className="absolute left-0 top-0 h-[2890px] w-[1920px] bg-white">
             <div className="absolute left-[144px] top-[118px] h-[50px] w-[580px]">
@@ -397,6 +406,7 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Section #6 */}
         <div className="absolute left-0 top-[5712px] h-[1748px] w-[1922px]">
           <div className="absolute left-0 top-0 h-[1380px] w-[1922px]">
             <div className="relative -left-px -top-px h-[1382px] bg-[#f0f0f0]">
