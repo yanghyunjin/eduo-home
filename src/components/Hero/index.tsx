@@ -49,12 +49,12 @@ const Hero = () => {
           <div className="relative flex w-screen flex-col bg-[url(/images/hero/Background.png)] bg-cover bg-center bg-no-repeat sm:top-[350px] sm:h-[1000px] xl:h-[800px] xl:bg-[100%_100%]">
             <div className="inset-0 flex flex-col items-center justify-center">
               <Image
-                className="3xl:left-[65%] absolute object-cover object-center sm:top-[440px] sm:top-[506px] sm:h-[447px] sm:w-[409.5px] xl:left-[60%] xl:top-[206px] 2xl:left-[55%] 2xl:top-[106px] 2xl:h-[596px] 2xl:w-[546px]"
+                className="absolute object-cover object-center sm:top-[440px] sm:top-[506px] sm:h-[447px] sm:w-[409.5px] xl:left-[60%] xl:top-[206px] 2xl:left-[55%] 2xl:top-[106px] 2xl:h-[596px] 2xl:w-[546px] 3xl:left-[65%]"
                 alt="Schoolgirl online"
                 src={Hero1}
               />
               <div className="flex h-[372px] w-[1000px] flex-col items-center justify-center sm:top-[60px] sm:h-[500px] xl:absolute xl:left-[10%] xl:top-[256px]">
-                <p className="3xl:w-[1000px] left-0 text-[60px] font-normal leading-[60px] text-white [font-family:Poppins] sm:w-[600px] md:w-[700px] xl:absolute xl:top-[28px] xl:w-[600px]">
+                <p className="left-0 text-[60px] font-normal leading-[60px] text-white [font-family:Poppins] sm:w-[600px] md:w-[700px] xl:absolute xl:top-[28px] xl:w-[600px] 3xl:w-[1000px]">
                   <span className="font-semibold leading-[68px] tracking-[-1.20px]">
                     Transform your school with Eduo: <br />
                   </span>
@@ -70,12 +70,12 @@ const Hero = () => {
 
         {/* Section #2 */}
         <div className="absolute left-0 h-[800px] w-[1920px] sm:top-[1100px] xl:top-[800px]">
-          <div className="relative inset-0  flex h-[200px] w-screen flex-col items-center justify-center bg-white">
+          <div className="relative inset-0 flex h-[200px] w-screen flex-col items-center justify-center bg-white">
             <p className=" left-[416px] top-[132px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins'] sm:w-[590px] md:w-[720px] xl:w-[1000px] 2xl:w-[1100px]">
               Empower your educators and inspire your students with our
               all-in-one education platform
             </p>
-            <div className="3xl:left-[26%] absolute top-[272px] flex h-[44px] w-[492px] flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%]">
+            <div className="absolute top-[272px] flex h-[44px] w-[492px] flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
               <Image
                 className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
                 alt="Done all alt round"
@@ -85,7 +85,7 @@ const Hero = () => {
                 Access anytime, anywhere
               </div>
             </div>
-            <div className=" 3xl:left-[26%]  absolute top-[344px] flex  h-[44px]  w-[492px] flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%]">
+            <div className=" absolute  top-[344px] flex h-[44px]  w-[492px]  flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
               <Image
                 className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
                 alt="Done all alt round"
@@ -95,7 +95,7 @@ const Hero = () => {
                 Regular updates
               </p>
             </div>
-            <div className=" 3xl:left-[26%]  absolute top-[417px] flex  h-[44px]  w-[492px] flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%]">
+            <div className=" absolute  top-[417px] flex h-[44px]  w-[492px]  flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
               <Image
                 className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
                 alt="Done all alt round"
@@ -105,7 +105,7 @@ const Hero = () => {
                 Strong STEM, AP curriculum
               </div>
             </div>
-            <div className=" 3xl:left-[26%]  absolute top-[489px] flex  h-[44px]  w-[492px] flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%]">
+            <div className=" absolute  top-[489px] flex h-[44px]  w-[492px]  flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
               <Image
                 className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
                 alt="Done all alt round"
@@ -208,79 +208,85 @@ const Hero = () => {
         </div>
 
         {/* Section #4 */}
-        <div className="absolute left-0 h-[762px] w-[1920px] bg-[#f6f4ff] sm:top-[2100px] lg:top-[1800px] xl:top-[1500px]">
-          <div className="absolute left-[589px] top-[60px] h-[155px] w-[742px] overflow-hidden">
-            <p className="absolute left-[3px] top-[68px] w-[736px] text-center text-[20px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-              Eduo was founded with the purpose of providing an integrated
-              platform
-              <br /> to complement schools in their operations and classroom
-              management.
-            </p>
-            <div className="absolute left-[112px] top-0 w-[517px] text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
-              Our Services
+        <div className="absolute left-0 h-[762px] w-screen bg-[#f6f4ff] sm:top-[2100px] lg:top-[1800px] xl:top-[1500px]">
+          <div className="absolute top-[60px] flex  w-[742px] w-screen flex-col items-center justify-center overflow-hidden ">
+            <div className="text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
+              Our Services <br />
+              <br />
+              <p className="top-[100px] w-[736px] text-center text-[20px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                Eduo was founded with the purpose of providing an integrated
+                platform
+                <br /> to complement schools in their operations and classroom
+                management.
+              </p>
             </div>
           </div>
-          <div className="absolute left-[384px] top-[234px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
-            <div className="relative h-[440px]">
-              <div className="absolute left-0 top-0 h-[440px] w-[360px]">
-                <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
+
+          <div className="top-[60px] flex w-screen flex-col items-center justify-center overflow-hidden ">
+            <div className="absolute w-full">
+              <div className="absolute left-[200px] top-[284px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
+                <div className="relative h-[440px]">
+                  <div className="absolute top-0 h-[440px] w-[360px]">
+                    <div className="relative h-[442px] w-[362px] rounded-[20px] bg-white" />
+                  </div>
+                  <div className="absolute left-[162px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    SIS
+                  </div>
+                  <p className="absolute left-[20px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Essential tools for efficient school
+                    <br /> operations at your fingertips
+                  </p>
+                  <Image
+                    className="absolute !left-[80px] !top-[93px] h-[108px] w-[200px] object-cover"
+                    alt="Saly"
+                    src={Saly_1}
+                  />
+                </div>
               </div>
-              <div className="absolute left-[162px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                SIS
+              <div className="absolute left-[1000px] top-[284px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
+                <div className="relative h-[440px]">
+                  <div className="absolute left-0 top-0 h-[440px] w-[360px]">
+                    <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
+                  </div>
+                  <div className="absolute left-[62px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    College Counseling
+                  </div>
+                  <p className="absolute left-[23px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Systematic counseling support through accumulated admissions
+                    data
+                  </p>
+                  <Image
+                    className="absolute left-[80px] top-[28px] h-[200px] w-[200px] object-cover"
+                    alt="Saly"
+                    src={Saly_2}
+                  />
+                </div>
               </div>
-              <p className="absolute left-[20px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                Essential tools for efficient school
-                <br /> operations at your fingertips
-              </p>
-              <Image
-                className="absolute !left-[80px] !top-[93px] h-[108px] w-[200px] object-cover"
-                alt="Saly"
-                src={Saly_1}
-              />
-            </div>
-          </div>
-          <div className="absolute left-[1176px] top-[234px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
-            <div className="relative h-[440px]">
-              <div className="absolute left-0 top-0 h-[440px] w-[360px]">
-                <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
+              <div className="absolute left-[600px] top-[284px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
+                <div className="relative h-[440px]">
+                  <div className="absolute left-0 top-0 h-[440px] w-[360px]">
+                    <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
+                  </div>
+                  <Image
+                    className="absolute left-[100px] top-[48px] h-[200px] w-[160px] object-cover"
+                    alt="Saly"
+                    src={Saly_3}
+                  />
+                  <div className="absolute left-[157px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    LMS
+                  </div>
+                  <p className="absolute left-[20px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Accredited courses prepared and
+                    <br /> taught by qualified instructors
+                  </p>
+                </div>
               </div>
-              <div className="absolute left-[62px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                College Counseling
-              </div>
-              <p className="absolute left-[23px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                Systematic counseling support through accumulated admissions
-                data
-              </p>
-              <Image
-                className="absolute left-[80px] top-[28px] h-[200px] w-[200px] object-cover"
-                alt="Saly"
-                src={Saly_2}
-              />
-            </div>
-          </div>
-          <div className="absolute left-[780px] top-[234px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
-            <div className="relative h-[440px]">
-              <div className="absolute left-0 top-0 h-[440px] w-[360px]">
-                <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
-              </div>
-              <Image
-                className="absolute left-[100px] top-[48px] h-[200px] w-[160px] object-cover"
-                alt="Saly"
-                src={Saly_3}
-              />
-              <div className="absolute left-[157px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                LMS
-              </div>
-              <p className="absolute left-[20px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                Accredited courses prepared and
-                <br /> taught by qualified instructors
-              </p>
             </div>
           </div>
         </div>
 
         {/* Section #5 */}
-        <div className="absolute left-0 top-[2362px] h-[2890px] w-[1920px]">
+        <div className="absolute left-0 top-[2400px] h-[2890px] w-[1920px] sm:top-[2862px]">
           <div className="absolute left-0 top-0 h-[2890px] w-[1920px] bg-white">
             <div className="absolute left-[144px] top-[118px] h-[50px] w-[580px]">
               <div className="relative h-[50px] w-[578px]">
