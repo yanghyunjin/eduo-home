@@ -208,8 +208,8 @@ const Hero = () => {
         </div>
 
         {/* Section #4 */}
-        <div className="absolute left-0 h-[762px] w-screen bg-[#f6f4ff] sm:top-[2100px] lg:top-[1800px] xl:top-[1500px]">
-          <div className="absolute top-[60px] flex  w-[742px] w-screen flex-col items-center justify-center overflow-hidden ">
+        <div className="no-scrollbar absolute left-0 h-[762px] w-screen overflow-x-auto bg-[#f6f4ff] sm:top-[2100px] lg:top-[1800px] xl:top-[1500px]">
+          <div className="absolute top-[60px] flex w-screen flex-col items-center justify-center overflow-hidden ">
             <div className="text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
               Our Services <br />
               <br />
@@ -221,64 +221,55 @@ const Hero = () => {
               </p>
             </div>
           </div>
-
-          <div className="top-[60px] flex w-screen flex-col items-center justify-center overflow-hidden ">
-            <div className="absolute w-full">
-              <div className="absolute left-[200px] top-[284px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
-                <div className="relative h-[440px]">
-                  <div className="absolute top-0 h-[440px] w-[360px]">
-                    <div className="relative h-[442px] w-[362px] rounded-[20px] bg-white" />
-                  </div>
-                  <div className="absolute left-[162px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                    SIS
-                  </div>
-                  <p className="absolute left-[20px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                    Essential tools for efficient school
-                    <br /> operations at your fingertips
-                  </p>
+          <div className="absolute top-[250px] sm:w-[1280px] xl:w-screen">
+            <div className="flex h-[440px] w-full flex-row items-center justify-center overflow-hidden">
+              <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+                <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
                   <Image
-                    className="absolute !left-[80px] !top-[93px] h-[108px] w-[200px] object-cover"
+                    className="m-11 h-[108px] w-[200px] object-cover"
                     alt="Saly"
                     src={Saly_1}
                   />
+                  <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    SIS
+                    <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                      Essential tools for efficient school
+                      <br /> operations at your fingertips
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="absolute left-[1000px] top-[284px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
-                <div className="relative h-[440px]">
-                  <div className="absolute left-0 top-0 h-[440px] w-[360px]">
-                    <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
-                  </div>
-                  <div className="absolute left-[62px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                    College Counseling
-                  </div>
-                  <p className="absolute left-[23px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                    Systematic counseling support through accumulated admissions
-                    data
-                  </p>
+              <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+                <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
                   <Image
-                    className="absolute left-[80px] top-[28px] h-[200px] w-[200px] object-cover"
-                    alt="Saly"
-                    src={Saly_2}
-                  />
-                </div>
-              </div>
-              <div className="absolute left-[600px] top-[284px] h-[440px] w-[360px] overflow-hidden rounded-[20px]">
-                <div className="relative h-[440px]">
-                  <div className="absolute left-0 top-0 h-[440px] w-[360px]">
-                    <div className="relative -left-px -top-px h-[442px] w-[362px] rounded-[20px] bg-white" />
-                  </div>
-                  <Image
-                    className="absolute left-[100px] top-[48px] h-[200px] w-[160px] object-cover"
+                    className="h-[200px] w-[160px] object-cover"
                     alt="Saly"
                     src={Saly_3}
                   />
-                  <div className="absolute left-[157px] top-[260px] text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                  <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                     LMS
+                    <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                      Accredited courses prepared and
+                      <br /> taught by qualified instructors
+                    </p>
                   </div>
-                  <p className="absolute left-[20px] top-[320px] w-[320px] text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                    Accredited courses prepared and
-                    <br /> taught by qualified instructors
-                  </p>
+                </div>
+              </div>
+
+              <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+                <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
+                  <Image
+                    className="h-[200px] w-[200px] object-cover"
+                    alt="Saly"
+                    src={Saly_2}
+                  />
+                  <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    LMS
+                    <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                      Systematic counseling support through accumulated
+                      admissions data
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -286,7 +277,8 @@ const Hero = () => {
         </div>
 
         {/* Section #5 */}
-        <div className="absolute left-0 top-[2400px] h-[2890px] w-[1920px] sm:top-[2862px]">
+        {/* <div className="absolute left-0 top-[2400px] h-[2890px] w-[1920px] sm:top-[2862px]"> */}
+        <div className="absolute left-0 h-[2890px] w-[1920px] sm:top-[2862px] lg:top-[2550px] xl:top-[2300px]">
           <div className="absolute left-0 top-0 h-[2890px] w-[1920px] bg-white">
             <div className="absolute left-[144px] top-[118px] h-[50px] w-[580px]">
               <div className="relative h-[50px] w-[578px]">
