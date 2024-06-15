@@ -69,7 +69,7 @@ const Hero = () => {
         </div>
 
         {/* Section #2 */}
-        <div className="absolute left-0 top-[1100px] h-[800px] w-[1920px] xl:top-[800px]">
+        <div className="absolute top-[1100px] h-[800px] w-[1920px] xl:top-[800px]">
           <div className="relative inset-0 flex h-[200px] w-screen flex-col items-center justify-center bg-white">
             <div className="absolute top-[60px]">
               <p className=" left-[416px] top-[132px] w-[590px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins'] md:w-[720px] xl:w-[1000px] 2xl:w-[1100px]">
@@ -172,50 +172,50 @@ const Hero = () => {
         </div>
 
         {/* Section #3 */}
-        <div className="absolute left-0 top-[5252px] h-[460px] w-[1920px] bg-white">
-          <div className="relative left-[240px] top-[107px] flex h-[244px] w-[1440px] flex-col items-center gap-[64px] px-[144px] py-0">
+        <div className="no-scrollbar absolute top-[5500px] h-[460px] w-screen overflow-x-auto bg-white lg:top-[5000px] xl:top-[4800px]">
+          <div className="absolute top-[60px] flex w-screen flex-col items-center justify-center">
             <div className="relative flex w-[1110px] flex-[0_0_auto] flex-col items-center gap-[8px]">
               <div className="relative mt-[-1.00px] self-stretch text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
                 Our Clients
               </div>
             </div>
-            <div className="relative ml-[-144.00px] mr-[-144.00px] h-[117.46px] w-[1440px]">
-              <Image
-                className="absolute left-0 top-0 h-[117px] w-[117px]"
-                alt="Image"
-                src={Client1}
-              />
-              <Image
-                className="absolute left-[155px] top-[32px] h-[54px] w-[174px]"
-                alt="Image"
-                src={Client2}
-              />
-              <Image
-                className="absolute left-[366px] top-0 h-[117px] w-[117px]"
-                alt="Image"
-                src={Client3}
-              />
-              <Image
-                className="absolute left-[522px] top-0 h-[117px] w-[155px] object-cover"
-                alt="Image"
-                src={Client4}
-              />
-              <Image
-                className="absolute left-[714px] top-0 h-[117px] w-[148px] object-cover"
-                alt="Image"
-                src={Client5}
-              />
-              <Image
-                className="absolute left-[1130px] top-[32px] h-[54px] w-[310px]"
-                alt="Image"
-                src={Client6}
-              />
-              <Image
-                className="absolute left-[900px] top-[32px] h-[54px] w-[193px] object-cover"
-                alt="Image"
-                src={Client7}
-              />
-            </div>
+          </div>
+          <div className="absolute top-[180px] ml-8 flex w-screen flex-row items-center space-x-5 lg:justify-center">
+            <Image
+              className="flex h-[117px] w-[117px]"
+              alt="Image"
+              src={Client1}
+            />
+            <Image
+              className="flex h-[054px] w-[174px]"
+              alt="Image"
+              src={Client2}
+            />
+            <Image
+              className="flex h-[117px] w-[117px]"
+              alt="Image"
+              src={Client3}
+            />
+            <Image
+              className="flex h-[117px] w-[155px]"
+              alt="Image"
+              src={Client4}
+            />
+            <Image
+              className="flex h-[117px] w-[148px]"
+              alt="Image"
+              src={Client5}
+            />
+            <Image
+              className="flex h-[054px] w-[193px]"
+              alt="Image"
+              src={Client6}
+            />
+            <Image
+              className="flex h-[054px] w-[310px]"
+              alt="Image"
+              src={Client7}
+            />
           </div>
         </div>
 
@@ -443,7 +443,7 @@ const Hero = () => {
         <div className="absolute top-[3350px] z-0 h-[2150px] w-screen bg-[url(/images/hero/Background2.png)] bg-cover bg-[50%_50%] bg-top lg:top-[3150px] lg:h-[1850px] xl:top-[2950px] " />
 
         {/* Section #6 */}
-        <div className="absolute left-0 top-[5712px] h-[1748px] w-[1922px]">
+        {/* <div className="absolute left-0 top-[5712px] h-[1748px] w-[1922px]">
           <div className="absolute left-0 top-0 h-[1380px] w-[1922px]">
             <div className="relative -left-px -top-px h-[1382px] bg-[#f0f0f0]">
               <div className="absolute left-[242px] top-[91px] w-[380px] text-[48px] font-semibold leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
@@ -570,7 +570,7 @@ const Hero = () => {
               src={Wave2}
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
