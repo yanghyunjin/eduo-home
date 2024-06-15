@@ -71,89 +71,101 @@ const Hero = () => {
         {/* Section #2 */}
         <div className="absolute left-0 h-[800px] w-[1920px] sm:top-[1100px] xl:top-[800px]">
           <div className="relative inset-0 flex h-[200px] w-screen flex-col items-center justify-center bg-white">
-            <p className=" left-[416px] top-[132px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins'] sm:w-[590px] md:w-[720px] xl:w-[1000px] 2xl:w-[1100px]">
-              Empower your educators and inspire your students with our
-              all-in-one education platform
-            </p>
-            <div className="absolute top-[272px] flex h-[44px] w-[492px] flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <div className="absolute top-[4px] w-[271px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                Access anytime, anywhere
-              </div>
-            </div>
-            <div className=" absolute  top-[344px] flex h-[44px]  w-[492px]  flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <p className="absolute top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                Regular updates
+            <div className="absolute top-[60px]">
+              <p className=" left-[416px] top-[132px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins'] sm:w-[590px] md:w-[720px] xl:w-[1000px] 2xl:w-[1100px]">
+                Empower your educators and inspire your students with our
+                all-in-one education platform
               </p>
             </div>
-            <div className=" absolute  top-[417px] flex h-[44px]  w-[492px]  flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <div className="absolute top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                Strong STEM, AP curriculum
-              </div>
-            </div>
-            <div className=" absolute  top-[489px] flex h-[44px]  w-[492px]  flex-col items-center justify-center sm:left-[10%] lg:left-[17%] xl:left-[20%] 2xl:left-[22%] 3xl:left-[26%]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <p className="absolute top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                Distinct features for administrators,
-                <br /> teachers, students, and parents
-              </p>
-            </div>
-            <div className="absolute flex h-[44px] w-[492px] flex-col items-center justify-center sm:left-[10%] sm:top-[561px] lg:left-[17%] lg:left-[60%] lg:top-[272px]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <p className="absolute top-[4px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                Intuitive and easy to use
-              </p>
-            </div>
-            <div className="absolute flex h-[44px] w-[492px] flex-col items-center justify-center sm:left-[10%] sm:top-[633px] lg:left-[17%] lg:left-[60%] lg:top-[344px]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <p className="absolute top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                Affordable
-              </p>
-            </div>
-            <div className="absolute flex h-[44px] w-[492px] flex-col items-center justify-center sm:left-[10%] sm:top-[705px] lg:left-[17%] lg:left-[60%] lg:top-[417px]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <div className="absolute top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                Made by teachers
-              </div>
-            </div>
-            <div className="absolute flex h-[44px] w-[492px] flex-col items-center justify-center sm:left-[10%] sm:top-[777px] lg:left-[17%] lg:left-[60%] lg:top-[489px]">
-              <Image
-                className="left-0 top-0 h-[44px] w-[40px] lg:absolute"
-                alt="Done all alt round"
-                src={Done_all_alt_round_fill}
-              />
-              <div className="absolute top-[4px] w-[438px] whitespace-nowrap text-[20px] font-medium leading-[32px] tracking-[0] text-black [font-family:'Poppins'] sm:left-[280px] lg:left-[52px]">
-                K-Education touches
+
+            <div className="absolute top-[350px]">
+              <div className="flex space-y-3 sm:flex-col lg:flex-row lg:space-x-10">
+                <div className="flex flex-col space-y-3">
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']]  w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Access anytime, anywhere
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']]  w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Regular updates
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']]  w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Strong STEM, AP curriculum
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Distinct features for administrators, teachers, students,
+                      and parents
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col space-y-3">
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Intuitive and easy to use
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Affordable
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Made by teachers
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      K-Education touches
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
