@@ -33,7 +33,7 @@ import Wave2 from "/public/images/hero/wave_2.png";
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <div className="flex w-full flex-nowrap justify-center overflow-x-auto bg-white">
+    <div className="flex w-screen flex-nowrap justify-center bg-white">
       <ModalVideo
         channel="custom"
         autoplay={true}
@@ -43,9 +43,9 @@ const Hero = () => {
         // videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
       />
-      <div className="relative h-[8200px] w-screen flex-col overflow-hidden overflow-x-auto bg-white lg:h-[7160px] xl:h-[6960px]">
+      <div className="relative h-[8200px] w-screen flex-col overflow-hidden bg-white lg:h-[7400px] xl:h-[6900px]">
         {/* Section #1 */}
-        <div className="absolute inset-0 top-[-265px] h-[1150px] w-[1920px] xl:top-[-350px]">
+        <div className="absolute inset-0 top-[-265px] h-[1150px] w-screen xl:top-[-350px]">
           <div className="relative top-[350px] flex h-[1000px] w-screen flex-col bg-[url(/images/hero/Background.png)] bg-cover bg-center bg-no-repeat xl:h-[800px] xl:bg-[100%_100%]">
             <div className="inset-0 flex flex-col items-center justify-center">
               <Image
@@ -69,7 +69,7 @@ const Hero = () => {
         </div>
 
         {/* Section #2 */}
-        <div className="absolute top-[1100px] h-[800px] w-[1920px] xl:top-[800px]">
+        <div className="absolute top-[1100px] h-[800px] w-screen xl:top-[800px]">
           <div className="relative inset-0 flex h-[200px] w-screen flex-col items-center justify-center bg-white">
             <div className="absolute top-[60px]">
               <p className=" left-[416px] top-[132px] w-[590px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins'] md:w-[720px] xl:w-[1000px] 2xl:w-[1100px]">
@@ -172,7 +172,7 @@ const Hero = () => {
         </div>
 
         {/* Section #3 */}
-        <div className="no-scrollbar absolute top-[5500px] h-[460px] w-screen overflow-x-auto bg-white lg:top-[5100px] xl:top-[4800px]">
+        <div className="absolute top-[5500px] h-[460px] w-screen bg-white lg:top-[5100px] xl:top-[4800px]">
           <div className="absolute top-[60px] flex w-screen flex-col items-center justify-center">
             <div className="relative flex w-[1110px] flex-[0_0_auto] flex-col items-center gap-[8px]">
               <div className="relative mt-[-1.00px] self-stretch text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
@@ -181,7 +181,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="absolute top-[180px] ml-8 flex flex-row items-center justify-center space-x-5 sm:w-[1280px] xl:w-full">
+          <div className="no-scrollbar absolute top-[180px] flex flex-row items-center space-x-2 overflow-x-auto sm:w-full xl:w-full xl:justify-center">
             <Image
               className="flex h-[117px] w-[117px]"
               alt="Image"
@@ -221,76 +221,76 @@ const Hero = () => {
         </div>
 
         {/* Section #4 */}
-        <div className="no-scrollbar absolute left-0 top-[2100px] h-[762px] w-screen overflow-x-auto bg-[#f6f4ff] lg:top-[1800px] xl:top-[1500px]">
-          <div className="absolute top-[60px] flex w-screen flex-col items-center justify-center overflow-hidden ">
-            <div className="text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
+        <div className="absolute left-0 top-[2000px] h-[800px] w-screen flex-col space-y-16 bg-[#f6f4ff] lg:top-[1700px] xl:top-[1500px]">
+          <div className="top-[60px] flex w-screen flex-col items-center justify-center">
+            <div className="mt-16 text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
               Our Services <br />
               <br />
-              <p className="top-[100px] w-[736px] text-center text-[20px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+              <p className="top-[100px] w-[536px] text-center text-[20px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins'] lg:w-[736px]">
                 Eduo was founded with the purpose of providing an integrated
-                platform
-                <br /> to complement schools in their operations and classroom
+                platform to complement schools in their operations and classroom
                 management.
               </p>
             </div>
           </div>
-          <div className="absolute top-[250px] w-[1280px] xl:w-screen">
-            <div className="flex h-[440px] w-full flex-row items-center justify-center overflow-hidden">
-              <div className="flex w-[400px] items-center justify-center rounded-[20px]">
-                <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
-                  <Image
-                    className="m-11 h-[108px] w-[200px] object-cover"
-                    alt="Saly"
-                    src={Saly_1}
-                  />
-                  <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                    SIS
-                    <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                      Essential tools for efficient school
-                      <br /> operations at your fingertips
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex w-[400px] items-center justify-center rounded-[20px]">
-                <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
-                  <Image
-                    className="h-[200px] w-[160px] object-cover"
-                    alt="Saly"
-                    src={Saly_3}
-                  />
-                  <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                    LMS
-                    <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                      Accredited courses prepared and
-                      <br /> taught by qualified instructors
-                    </p>
-                  </div>
-                </div>
-              </div>
 
-              <div className="flex w-[400px] items-center justify-center rounded-[20px]">
-                <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
-                  <Image
-                    className="h-[200px] w-[200px] object-cover"
-                    alt="Saly"
-                    src={Saly_2}
-                  />
-                  <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                    LMS
-                    <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                      Systematic counseling support through accumulated
-                      admissions data
-                    </p>
-                  </div>
+          <div className="no-scrollbar ml-10 mr-10 flex h-[440px] flex-row items-center space-x-16 overflow-x-auto xl:w-screen xl:justify-center">
+            <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+              <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
+                <Image
+                  className="m-11 h-[108px] w-[200px] object-cover"
+                  alt="Saly"
+                  src={Saly_1}
+                />
+                <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                  SIS
+                  <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Essential tools for efficient school
+                    <br /> operations at your fingertips
+                  </p>
                 </div>
               </div>
+            </div>
+
+            <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+              <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
+                <Image
+                  className="h-[200px] w-[160px] object-cover"
+                  alt="Saly"
+                  src={Saly_3}
+                />
+                <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                  LMS
+                  <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Accredited courses prepared and
+                    <br /> taught by qualified instructors
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+              <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
+                <Image
+                  className="h-[200px] w-[200px] object-cover"
+                  alt="Saly"
+                  src={Saly_2}
+                />
+                <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                  LMS
+                  <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Systematic counseling support through accumulated admissions
+                    data
+                  </p>
+                </div>
+              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
 
         {/* Section #5 */}
-        <div className="absolute top-[2950px] z-10 h-[360px] w-[1920px] space-y-16 bg-white lg:top-[2600px] xl:top-[2350px]">
+        <div className="absolute top-[2850px] z-10 h-[360px] w-screen space-y-16 bg-white lg:top-[2550px] xl:top-[2350px]">
           <div className="flex w-screen items-center justify-center lg:ml-32 lg:justify-start">
             <div className="h-[50px] w-[580px]">
               <div className="relative h-[50px] w-[578px]">
@@ -443,7 +443,7 @@ const Hero = () => {
         <div className="absolute top-[3350px] z-0 h-[2150px] w-screen bg-[url(/images/hero/Background2.png)] bg-cover bg-[50%_50%] bg-top lg:top-[3250px] lg:h-[1850px] xl:top-[2950px] " />
 
         {/* Section #6 */}
-        <div className="absolute top-[5900px] h-[1748px] w-screen lg:top-[5400px] xl:top-[5200px]">
+        <div className="absolute top-[5900px] h-[1748px] w-screen lg:top-[5500px] xl:top-[5200px]">
           <div className="flex h-[2000px] flex-col space-y-32 bg-[#f0f0f0] lg:h-[1600px] xl:h-[1400px]">
             <div className="mt-16 flex">
               <div className="ml-32 w-[380px] text-[48px] font-semibold leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
@@ -534,7 +534,7 @@ const Hero = () => {
         </div>
 
         {/* Footer */}
-        <div className="no-scrollbar absolute top-[7800px] h-[1748px] w-screen overflow-x-auto lg:top-[6900px] xl:top-[6500px]">
+        <div className="no-scrollbar absolute top-[7800px] h-[1748px] w-screen overflow-x-auto lg:top-[7000px] xl:top-[6500px]">
           <div className="absolute top-[150px] flex w-[1280px] flex-row xl:w-full">
             <div className="ml-16 flex h-[360px] w-[1280px] flex-col space-y-16 bg-white">
               <div className="flex">
@@ -606,11 +606,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <Image
-            className="absolute h-[100px] w-screen"
-            alt="Wave"
-            src={Wave2}
-          />
+          <div className="absolute w-[1280px] xl:w-screen">
+            <Image className="h-[100px]" alt="Wave" src={Wave2} />
+          </div>
         </div>
       </div>
     </div>
