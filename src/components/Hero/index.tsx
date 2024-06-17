@@ -1,23 +1,40 @@
 "use client";
-import React,{useState} from "react";
-// import { ButtonSolidStyle } from "./ButtonSolidStyle";
-// import { DateRange } from "./DateRange";
-// import { DivWrapper } from "./DivWrapper";
-// import { DoneAllAltRound } from "./DoneAllAltRound";
-// import { FoldersGroupFill } from "./FoldersGroupFill";
-// import { Group } from "./Group";
-// import { Saly } from "./Saly";
-// import { SalyWrapper } from "./SalyWrapper";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ModalVideo from "react-modal-video";
+
+// import images to use 'Image' tag
+import Hero1 from "/public/images/hero/hero1.png";
+import Done_all_alt_round_fill from "/public/images/hero/Done_all_alt_round_fill.png";
+import Client1 from "/public/images/hero/client1.png";
+import Client2 from "/public/images/hero/client2.png";
+import Client3 from "/public/images/hero/client3.png";
+import Client4 from "/public/images/hero/client4.png";
+import Client5 from "/public/images/hero/client5.png";
+import Client6 from "/public/images/hero/client6.png";
+import Client7 from "/public/images/hero/client7.png";
+import Saly_1 from "/public/images/hero/saly_1.png";
+import Saly_2 from "/public/images/hero/saly_2.png";
+import Saly_3 from "/public/images/hero/saly_3.png";
+import EDUO_LOGO from "/public/images/logo/EDUO_LOGO.png";
+import Book_check from "/public/images/hero/Book_check.png";
+import Certificate from "/public/images/hero/Certificate.png";
+import Group from "/public/images/hero/Group.png";
+import Button from "/public/images/hero/Button.png";
+import Line from "/public/images/hero/Line.png";
+import CAS from "/public/images/hero/CAS.png";
+import Start from "/public/images/hero/start.png";
+import End from "/public/images/hero/end.png";
+import User1 from "/public/images/hero/user1.png";
+import User2 from "/public/images/hero/user2.png";
+import Wave2 from "/public/images/hero/wave_2.png";
+
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    
-    <div className="bg-white flex flex-row flex-nowrap justify-center w-full overflow-x-auto">
+    <div className="flex w-screen flex-nowrap justify-center bg-white">
       <ModalVideo
-      
         channel="custom"
         autoplay={true}
         start={true}
@@ -26,479 +43,552 @@ const Hero = () => {
         // videoId="L61p2uyiMSo"
         onClose={() => setOpen(false)}
       />
-      <div className="bg-white overflow-hidden w-[1920px] h-[7460px] relative overflow-x-auto">
-        <div className="absolute w-[1920px] h-[1150px] top-[-350px] left-0">
-          <div className="absolute w-[1920px] h-[1150px] top-0 left-0">
-            <div className="relative h-[800px] top-[350px] bg-[url(/images/hero/Background.png)] bg-cover bg-[50%_50%]">
-              <img
-                className="absolute w-[546px] h-[596px] top-[106px] left-[1230px] object-cover"
+      <div className="relative h-[8200px] w-screen flex-col overflow-hidden bg-white lg:h-[7400px] xl:h-[6900px]">
+        {/* Section #1 */}
+        <div className="absolute inset-0 top-[-265px] h-[1150px] w-screen xl:top-[-350px]">
+          <div className="relative top-[350px] flex h-[1000px] w-screen flex-col bg-[url(/images/hero/Background.png)] bg-cover bg-center bg-no-repeat xl:h-[800px] xl:bg-[100%_100%]">
+            <div className="inset-0 flex flex-col items-center justify-center">
+              <Image
+                className="absolute top-[440px] top-[506px] h-[447px] w-[409.5px] object-cover object-center xl:left-[60%] xl:top-[206px] 2xl:left-[55%] 2xl:top-[106px] 2xl:h-[596px] 2xl:w-[546px] 3xl:left-[65%]"
                 alt="Schoolgirl online"
-                src="/images/hero/hero1.png"
+                src={Hero1}
               />
-              <div className="absolute w-[1000px] h-[372px] top-[296px] left-[230px]">
-                <p className="absolute w-[1000px] top-[28px] left-0 [font-family:Poppins] font-normal text-white text-[60px] leading-[60px]">
-                  <span className="font-semibold tracking-[-1.20px] leading-[68px]">
+              <div className="top-[60px] flex h-[372px] h-[500px] w-[1000px] flex-col items-center justify-center xl:absolute xl:left-[10%] xl:top-[256px]">
+                <p className="left-0 w-[600px] text-[60px] font-normal leading-[60px] text-white [font-family:Poppins] md:w-[700px] xl:absolute xl:top-[28px] xl:w-[600px] 3xl:w-[1000px]">
+                  <span className="font-semibold leading-[68px] tracking-[-1.20px]">
                     Transform your school with Eduo: <br />
                   </span>
-                  <span className="[font-family:'Poppins'] font-medium text-[32px] tracking-[-0.32px] leading-[64px]">
-                    a single solution designed to streamline administrative processes and enhance learning outcomes
+                  <span className="text-[32px] font-medium leading-[32px] tracking-[-0.32px] [font-family:'Poppins']">
+                    a single solution designed to streamline administrative
+                    processes and enhance learning outcomes
                   </span>
                 </p>
               </div>
             </div>
-            
-            {/* <div className="relative h-[800px] top-[350px] bg-[url(/images/hero/Background.png)] bg-cover bg-[50%_50%]">
-              <img
-                className="absolute w-[546px] h-[596px] top-[106px] left-[1009px] object-cover"
-                alt="Schoolgirl online"
-                src="/images/hero/hero1.png"
-              />
-              <div className="absolute w-[821px] h-[391px] top-[241px] left-[278px]">
-                <div className="relative h-[391px]">
-                  <p className="absolute w-[568px] top-[38px] left-0 [font-family:'Poppins-SemiBold',Helvetica] font-normal text-white text-[64px] leading-[64px]">
-                    <span className="font-semibold tracking-[-1.28px] leading-[68px]">
-                      Transform your school with Eduo:
-                    </span>
-                    <span className="[font-family:'Poppins',Helvetica] font-medium tracking-[-1.28px] leading-[68px]">
-                      {" "}
-                      <br />
-                    </span>
-                    <span className="[font-family:'Poppins',Helvetica] font-medium text-[32px] tracking-[-0.32px]">
-                      a single solution designed to<br/> streamline administrative processes<br/> and enhance learning outcomes
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
-        <div className="absolute w-[1922px] h-[800px] top-[800px] left-0">
-          <div className="relative w-[1920px] h-[800px] bg-white">
-            <p className="absolute w-[1088px] top-[132px] left-[416px] [font-family:'Poppins'] font-medium text-black text-[40px] text-center tracking-[-1.00px] leading-[65px]">
-              Empower your educators and inspire your students with<br/> our all-in-one education platform
-            </p>
-            <div className="absolute w-[325px] h-[44px] top-[372px] left-[423px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <div className="absolute w-[271px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Access anytime, anywhere
-              </div>
-            </div>
-            <div className="absolute w-[492px] h-[44px] top-[444px] left-[423px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <p className="absolute w-[438px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Regular updates
-              </p>
-            </div>
-            <div className="absolute w-[492px] h-[44px] top-[517px] left-[423px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <div className="absolute w-[438px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Strong STEM, AP curriculum
-              </div>
-            </div>
-            {/* <div className="absolute w-[492px] h-[44px] top-[497px] left-[423px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <p className="absolute w-[438px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Distinct features for administrators, teachers, students, and parents
-              </p>
-            </div> */}
-             <div className="absolute w-[492px] h-[44px] top-[589px] left-[423px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <p className="w-[438px] absolute top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Distinct features for administrators,<br/> teachers, students, and parents
-              </p>
-            </div>
-            <div className="absolute w-[629px] h-[44px] top-[372px] left-[1007px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <p className="absolute top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Intuitive and easy to use
-              </p>
-            </div>
-            <div className="absolute w-[492px] h-[44px] top-[444px] left-[1007px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <p className="absolute w-[438px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Affordable
-              </p>
-            </div>
-            <div className="absolute w-[492px] h-[44px] top-[517px] left-[1007px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <div className="absolute w-[438px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                Made by teachers
-              </div>
-            </div>
-            <div className="absolute w-[492px] h-[44px] top-[589px] left-[1007px]">
-              <img
-                className="absolute w-[40px] h-[44px] top-0 left-0"
-                alt="Done all alt round"
-                src="/images/hero/Done_all_alt_round_fill.png"
-              />
-              <div className="absolute w-[438px] top-[4px] left-[52px] [font-family:'Poppins'] font-medium text-black text-[20px] tracking-[0] leading-[32px] whitespace-nowrap">
-                K-Education touches
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="absolute w-[1920px] h-[460px] top-[5252px] left-0 bg-white">
-          <div className="flex flex-col w-[1440px] h-[244px] items-center gap-[64px] px-[144px] py-0 relative top-[107px] left-[240px]">
-            <div className="flex flex-col w-[1110px] items-center gap-[8px] relative flex-[0_0_auto]">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Poppins'] font-semibold text-black text-[48px] text-center tracking-[0] leading-[44px]">
-                Our Clients
-              </div>
-            </div>
-            <div className="relative w-[1440px] h-[117.46px] ml-[-144.00px] mr-[-144.00px]">
-              <img
-                className="absolute w-[117px] h-[117px] top-0 left-0"
-                alt="Collegiate academy"
-                src="/images/hero/client1.png"
-              />
-              <img
-                className="absolute w-[174px] h-[54px] top-[32px] left-[155px]"
-                alt="Logo daum"
-                src="/images/hero/client2.png"
-              />
-              <img className="absolute w-[117px] h-[117px] top-0 left-[366px]" alt="Image" src="/images/hero/client3.png" />
-              <img
-                className="w-[155px] left-[522px] absolute h-[117px] top-0 object-cover"
-                alt="Screen shot"
-                src="/images/hero/client4.png"
-              />
-              <img
-                className="w-[148px] left-[714px] absolute h-[117px] top-0 object-cover"
-                alt="Screen shot"
-                src="/images/hero/client5.png"
-              />
-              <img
-                className="absolute w-[310px] h-[54px] top-[32px] left-[1130px]"
-                alt="Kakaotalk photo"
-                src="/images/hero/client7.png"
-              />
 
-              <img
-                className="absolute w-[193px] h-[54px] top-[32px] left-[900px] object-cover"
-                alt="Image"
-                src="/images/hero/client6.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="absolute w-[1920px] h-[762px] top-[1600px] left-0 bg-[#f6f4ff]">
-          <div className="absolute w-[742px] h-[155px] top-[60px] left-[589px] overflow-hidden">
-            <p className="absolute w-[736px] top-[68px] left-[3px] [font-family:'Poppins'] font-normal text-black text-[20px] text-center tracking-[0] leading-[30px]">
-              Eduo was founded with the purpose of providing an integrated platform<br/> to complement schools in their
-              operations and classroom management.
-            </p>
-            <div className="absolute w-[517px] top-0 left-[112px] [font-family:'Poppins'] font-semibold text-black text-[48px] text-center tracking-[0] leading-[44px]">
-              Our Services
-            </div>
-          </div>
-          <div className="absolute w-[360px] h-[440px] top-[234px] left-[384px] rounded-[20px] overflow-hidden">
-            <div className="relative h-[440px]">
-              <div className="absolute w-[360px] h-[440px] top-0 left-0">
-                <div className="relative w-[362px] h-[442px] -top-px -left-px bg-white rounded-[20px]" />
-              </div>
-              <div className="absolute top-[260px] left-[162px] [font-family:'Poppins'] font-medium text-black text-[24px] text-center tracking-[0] leading-[normal]">
-                SIS
-              </div>
-              <p className="absolute w-[320px] top-[320px] left-[20px] [font-family:'Poppins'] font-normal text-black text-[16px] text-center tracking-[0] leading-[30px]">
-                Essential tools for efficient school<br/> operations at your fingertips
-              </p>
-              <img
-                className="absolute w-[200px] h-[108px] !left-[80px] !top-[93px] object-cover"
-                alt="Students discussion"
-                src="/images/hero/saly_1.png"
-              />
-              {/* <Saly className="!absolute !left-[80px] !top-[93px]" /> */}
-            </div>
-          </div>
-          <div className="absolute w-[360px] h-[440px] top-[234px] left-[1176px] rounded-[20px] overflow-hidden">
-            <div className="relative h-[440px]">
-              <div className="absolute w-[360px] h-[440px] top-0 left-0">
-                <div className="relative w-[362px] h-[442px] -top-px -left-px bg-white rounded-[20px]" />
-              </div>
-              <div className="left-[62px] absolute top-[260px] [font-family:'Poppins'] font-medium text-black text-[24px] text-center tracking-[0] leading-[normal]">
-                College Counseling
-              </div>
-              <p className="left-[23px] absolute w-[320px] top-[320px] [font-family:'Poppins'] font-normal text-black text-[16px] text-center tracking-[0] leading-[30px]">
-                Systematic counseling support through accumulated admissions data
-              </p>
-              <img
-                className="absolute w-[200px] h-[200px] top-[28px] left-[80px] object-cover"
-                alt="Students discussion"
-                src="/images/hero/saly_3.png"
-              />
-            </div>
-          </div>
-          <div className="absolute w-[360px] h-[440px] top-[234px] left-[780px] rounded-[20px] overflow-hidden">
-            <div className="relative h-[440px]">
-              <div className="absolute w-[360px] h-[440px] top-0 left-0">
-                <div className="relative w-[362px] h-[442px] -top-px -left-px bg-white rounded-[20px]" />
-              </div>
-              <img
-                className="absolute w-[160px] h-[200px] top-[48px] left-[100px] object-cover"
-                alt="Saly"
-                src="/images/hero/saly_2.png"
-              />
-              <div className="left-[157px] absolute top-[260px] [font-family:'Poppins'] font-medium text-black text-[24px] text-center tracking-[0] leading-[normal]">
-                LMS
-              </div>
-              <p className="left-[20px] absolute w-[320px] top-[320px] [font-family:'Poppins'] font-normal text-black text-[16px] text-center tracking-[0] leading-[30px]">
-                Accredited courses prepared and<br/> taught by qualified instructors
+        {/* Section #2 */}
+        <div className="absolute top-[1100px] h-[800px] w-screen xl:top-[800px]">
+          <div className="relative inset-0 flex h-[200px] w-screen flex-col items-center justify-center bg-white">
+            <div className="absolute top-[60px]">
+              <p className=" left-[416px] top-[132px] w-[590px] text-center text-[40px] font-medium leading-[65px] tracking-[-1.00px] text-black [font-family:'Poppins'] md:w-[720px] xl:w-[1000px] 2xl:w-[1100px]">
+                Empower your educators and inspire your students with our
+                all-in-one education platform
               </p>
             </div>
-          </div>
-        </div>
-        <div className="absolute w-[1920px] h-[2890px] top-[2362px] left-0">
-          <div className="absolute w-[1920px] h-[2890px] top-0 left-0 bg-white">
-            <div className="absolute w-[580px] h-[50px] top-[118px] left-[144px]">
-              <div className="relative w-[578px] h-[50px]">
-                <div className="absolute w-[455px] top-0 left-0 [font-family:'Poppins'] font-semibold text-black text-[48px] tracking-[0] leading-[50.4px]">
-                  A Sneak Peek into
-                </div>
-                <img
-                  className="absolute w-[132px] h-[44px] top-0 left-[446px] object-cover"
-                  alt="Image"
-                  src="/images/logo/EDUO_LOGO.png"
-                />
-              </div>
-            </div>
-          
-        <div className="absolute w-[1920px] h-[2208px] top-[682px] left-0 bg-[url(/images/hero/Background2.png)] bg-cover bg-[50%_50%]">
-          <div className="absolute w-[383px] h-[152px] top-[1442px] left-[489px]">
-            <div className="left-[60px] absolute top-0 [font-family:'Poppins'] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
-              For Administrators
-            </div>
-            <p className="absolute top-[44px] left-[42px] [font-family:'Poppins'] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              • Faculty and student database
-              <br />
-              • Administrative documents
-              <br />
-              • Scheduling
-              <br />
-              • Automated transcripts
-            </p>
-            <img
-                      className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
-                      alt="Image"
-                      src="/images/hero/Book_check.png"
+
+            <div className="absolute top-[300px]">
+              <div className="flex flex-col space-y-3 lg:flex-row lg:space-x-10">
+                <div className="flex flex-col space-y-3">
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
                     />
-            {/* <BookCheck className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
-          </div>
-          <div className="absolute w-[383px] h-[152px] top-[1442px] left-[1048px]">
-            <div className="left-[56px] absolute top-0 [font-family:'Poppins'] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
-              For Teachers
-            </div>
-            <p className="absolute top-[44px] left-[42px] [font-family:'Poppins'] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              • Lesson planning support
-              <br />
-              • Tracking student progress
-              <br />
-              • Question generator
-              <br />
-              • Attendance management
-            </p>
-            <img
-                  className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
-                  alt="Image"
-                  src="/images/hero/Sertificate.png"
-                />
-            {/* <Sertificate className="!absolute !w-[40px] !h-[40px] !top-0 !left-0" /> */}
-          </div>
-          <div className="absolute w-[383px] h-[152px] top-[1721px] left-[489px]">
-            <div className="left-[56px] absolute top-0 [font-family:'Poppins'] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
-              For Students
-            </div>
-            <p className="w-[463px] absolute top-[44px] left-[42px] [font-family:'Poppins'] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              • Comprehensive workspace
-              <br />
-              • Discussion board
-              <br />
-              • Video lectures with distraction prevention
-              <br />
-              • College &amp; career counseling
-            </p>
-            {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="group.svg" /> */}
-            <img
-                   className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
-                  alt="Image"
-                  src="/images/hero/Group.png"
-                />
-          </div>
-          <div className="absolute w-[383px] h-[152px] top-[1721px] left-[1048px]">
-            <div className="left-[56px] absolute top-0 [font-family:'Poppins'] font-bold text-white text-[24px] tracking-[0] leading-[32px] whitespace-nowrap">
-              For Parents
-            </div>
-            <p className="w-[463px] absolute top-[44px] left-[42px] [font-family:'Poppins'] font-semibold text-[#cccccc] text-[20px] tracking-[0] leading-[36px]">
-              • Check tuition and invoice <br />
-              • View grades and homework <br />
-              • Monitor attendance and discipline <br />
-              • Access calendar and other resources
-            </p>
-            {/* <img className="absolute w-[40px] h-[40px] top-0 left-0" alt="Group" src="image.svg" /> */}
-            <img
-                   className="!absolute !w-[40px] !h-[40px] !top-0 !left-0"
-                  alt="Image"
-                  src="/images/hero/Group.png"
-                />
-          </div>
-          <div className="absolute top-[1162px] left-[823px] [font-family:'Poppins'] font-extrabold text-white text-[48px] text-center tracking-[0] leading-[58px] whitespace-nowrap">
-            Why Eduo?
-          </div>
-          <p className="absolute top-[1232px] left-[597px] [font-family:'Poppins'] font-semibold text-white text-[32px] text-center tracking-[0] leading-[58px] whitespace-nowrap">
-            We provide the solution to all your problems.
-          </p>
-          {/* <img className="absolute w-[160px] h-px top-[1352px] left-[880px]" alt="Line" src="line-8.svg" /> */}
-          <div onClick={() => {setOpen(true)}}  className="cursor-pointer absolute w-[940px] h-[540px] top-[542px] left-[490px] bg-[url(/images/hero/image23.png)] bg-[100%_100%]">
-                <img className="  absolute w-[242px] h-[242px] top-[171px] left-[349px]" alt="Button" src="/images/hero/Button.png" />
-              </div>
-              <img
-                
-                className="absolute w-[160px] h-px top-[1352px] left-[880px]" 
-                alt="Button play"
-                src="images/hero/Line.png"
-              />
-          <div className="absolute w-[317px] top-[2038px] left-[802px] [font-family:'Poppins'] font-semibold text-white text-[32px] text-center tracking-[0] leading-[normal]">
-            ...and more!
-          </div>
-        </div>
-        </div>
-          <div className="flex flex-wrap w-[940px] items-center justify-center gap-[36px] p-[40px] absolute top-[278px] left-[490px] bg-white rounded-[20px] overflow-hidden shadow-[0px_0px_9px_2px_#0000000d]">
-            <img className="relative w-[848px] h-[608px] mt-[-4.00px] object-cover" alt="Cas" src="/images/hero/CAS.png" />
-            <div className="relative w-[473px] h-[48px] [font-family:'Poppins'] font-semibold text-black text-[32px] tracking-[0] leading-[normal]">
-              Collegiate Academy of Seoul
-            </div>
-          </div>
-        </div>
+                    <div className="[font-family:'Poppins']]  w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Access anytime, anywhere
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']]  w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Regular updates
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']]  w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Strong STEM, AP curriculum
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Distinct features for administrators, teachers, students,
+                      and parents
+                    </div>
+                  </div>
+                </div>
 
-
-        <div className="absolute w-[1922px] h-[1748px] top-[5712px] left-0">
-          <div className="absolute w-[1922px] h-[1380px] top-0 left-0">
-            <div className="relative h-[1382px] -top-px -left-px bg-[#f0f0f0]">
-              <div className="absolute w-[380px] top-[91px] left-[242px] [font-family:'Poppins'] font-semibold text-black text-[48px] tracking-[0] leading-[normal]">
-                Success Stories
-              </div>
-              <img
-                className="absolute w-[200px] h-[160px] top-[231px] left-[397px] object-cover"
-                alt="Img"
-                src="images/hero/start.png"
-              />
-              <img
-                className="absolute w-[200px] h-[160px] top-[721px] left-[1421px] object-cover"
-                alt="Img"
-                src="images/hero/end.png"
-              />
-              <div className="absolute w-[1042px] h-[316px] top-[311px] left-[641px]">
-                <div className="relative w-[1040px] h-[316px]">
-                  <p className="absolute w-[1040px] top-0 left-0 [font-family:'Poppins'] font-medium text-black text-[40px] tracking-[-0.80px] leading-[64px]">
-                    Eduo is one of the best tools I’ve utilized to teach my classes. It helps me to focus on what really
-                    matters for my students.
-                  </p>
-                  <div className="absolute w-[1018px] h-[100px] top-[216px] left-0">
-                    <p className="absolute w-[888px] top-[14px] left-[128px] [font-family:'Poppins'] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
-                      <span className="font-bold">
-                        Alexa
-                        <br />
-                      </span>
-                      <span className="[font-family:'Poppins'] font-medium">
-                        Teacher at Collegiate Academy of Seoul
-                      </span>
-                    </p>
-                    <div className="inline-flex flex-col items-center justify-center gap-[10px] absolute top-0 left-0">
-                      <div className="relative w-[100.1px] h-[100px] bg-[#d9d9d9] rounded-[50.05px/50px]" />
-                      <img
-                        className="absolute w-[100px] h-[100px] top-0 left-0 object-cover"
-                        alt="Element"
-                        src="/images/hero/user1.png"
-                      />
+                <div className="flex flex-col space-y-3">
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Intuitive and easy to use
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Affordable
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      Made by teachers
+                    </div>
+                  </div>
+                  <div className="flex flex-row items-center justify-center space-x-5">
+                    <Image
+                      className="h-[44px] w-[40px]"
+                      alt="Done all alt round"
+                      src={Done_all_alt_round_fill}
+                    />
+                    <div className="[font-family:'Poppins']] w-[340px] text-[20px] font-medium leading-[32px] tracking-[0] text-black">
+                      K-Education touches
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="absolute w-[1048px] h-[383px] top-[765px] left-[369px]">
-                <p className="absolute w-[1040px] top-0 left-0 [font-family:'Poppins'] font-medium text-black text-[40px] tracking-[-0.80px] leading-[64px]">
-                  Eduo is easy to navigate even for those who are<br/> new to digital tools. It helped our school maximize efficiency by digitizing records and optimizing administrative tasks.
-                </p>
-                <p className="absolute w-[910px] top-[297px] left-[134px] [font-family:'Poppins'] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
-                  <span className="font-bold">
-                    Tim
-                    <br />
-                  </span>
-                  <span className="[font-family:'Poppins'] font-medium">
-                    Principal at Azabu Christian Academy
-                  </span>
-                </p>
-                <img
-                  className="absolute w-[100px] h-[100px] top-[283px] left-0"
-                  alt="Mask group"
-                  src="/images/hero/user2.png"
+            </div>
+          </div>
+        </div>
+
+        {/* Section #3 */}
+        <div className="absolute top-[5500px] h-[460px] w-screen bg-white lg:top-[5100px] xl:top-[4800px]">
+          <div className="absolute top-[60px] flex w-screen flex-col items-center justify-center">
+            <div className="relative flex w-[1110px] flex-[0_0_auto] flex-col items-center gap-[8px]">
+              <div className="relative mt-[-1.00px] self-stretch text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
+                Our Clients
+              </div>
+            </div>
+          </div>
+
+          <div className="no-scrollbar absolute top-[180px] flex flex-row items-center space-x-2 overflow-x-auto sm:w-full xl:w-full xl:justify-center">
+            <Image
+              className="flex h-[117px] w-[117px]"
+              alt="Image"
+              src={Client1}
+            />
+            <Image
+              className="flex h-[054px] w-[174px]"
+              alt="Image"
+              src={Client2}
+            />
+            <Image
+              className="flex h-[117px] w-[117px]"
+              alt="Image"
+              src={Client3}
+            />
+            <Image
+              className="flex h-[117px] w-[155px]"
+              alt="Image"
+              src={Client4}
+            />
+            <Image
+              className="flex h-[117px] w-[148px]"
+              alt="Image"
+              src={Client5}
+            />
+            <Image
+              className="flex h-[054px] w-[193px]"
+              alt="Image"
+              src={Client6}
+            />
+            <Image
+              className="flex h-[054px] w-[310px]"
+              alt="Image"
+              src={Client7}
+            />
+          </div>
+        </div>
+
+        {/* Section #4 */}
+        <div className="absolute left-0 top-[2000px] h-[800px] w-screen flex-col space-y-16 bg-[#f6f4ff] lg:top-[1700px] xl:top-[1500px]">
+          <div className="top-[60px] flex w-screen flex-col items-center justify-center">
+            <div className="mt-16 text-center text-[48px] font-semibold leading-[44px] tracking-[0] text-black [font-family:'Poppins']">
+              Our Services <br />
+              <br />
+              <p className="top-[100px] w-[536px] text-center text-[20px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins'] lg:w-[736px]">
+                Eduo was founded with the purpose of providing an integrated
+                platform to complement schools in their operations and classroom
+                management.
+              </p>
+            </div>
+          </div>
+
+          <div className="no-scrollbar ml-10 mr-10 flex h-[440px] flex-row items-center space-x-16 overflow-x-auto xl:w-screen xl:justify-center">
+            <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+              <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
+                <Image
+                  className="m-11 h-[108px] w-[200px] object-cover"
+                  alt="Saly"
+                  src={Saly_1}
+                />
+                <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                  SIS
+                  <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Essential tools for efficient school
+                    <br /> operations at your fingertips
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+              <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
+                <Image
+                  className="h-[200px] w-[160px] object-cover"
+                  alt="Saly"
+                  src={Saly_3}
+                />
+                <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                  LMS
+                  <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Accredited courses prepared and
+                    <br /> taught by qualified instructors
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex w-[400px] items-center justify-center rounded-[20px]">
+              <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
+                <Image
+                  className="h-[200px] w-[200px] object-cover"
+                  alt="Saly"
+                  src={Saly_2}
+                />
+                <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                  LMS
+                  <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
+                    Systematic counseling support through accumulated admissions
+                    data
+                  </p>
+                </div>
+              </div>
+              {/* </div> */}
+            </div>
+          </div>
+        </div>
+
+        {/* Section #5 */}
+        <div className="absolute top-[2850px] z-10 h-[360px] w-screen space-y-16 bg-white lg:top-[2550px] xl:top-[2350px]">
+          <div className="flex w-screen items-center justify-center lg:ml-32 lg:justify-start">
+            <div className="h-[50px] w-[580px]">
+              <div className="relative h-[50px] w-[578px]">
+                <div className="absolute left-0 top-0 w-[455px] text-[48px] font-semibold leading-[50.4px] tracking-[0] text-black [font-family:'Poppins']">
+                  A Sneak Peek into
+                </div>
+                <Image
+                  className="absolute left-[446px] top-0 h-[44px] w-[132px] object-cover"
+                  alt="Image"
+                  src={EDUO_LOGO}
                 />
               </div>
             </div>
           </div>
-          <div className="absolute w-[1920px] h-[460px] top-[1288px] left-0">
-            <div className="absolute w-[1922px] h-[360px] top-[100px] left-0">
-              <div className="relative w-[1920px] h-[360px] bg-white">
-                <img
-                  className="absolute w-[228px] h-[76px] top-[80px] left-[165px] object-cover"
-                  alt="Image"
-                  src="/images/logo/EDUO_LOGO.png"
+          <div className="flex w-screen items-center justify-center">
+            <div className="flex w-[600px] flex-wrap items-center justify-center gap-[36px] overflow-hidden rounded-[20px] bg-white p-[40px] shadow-[0px_0px_9px_2px_#0000000d] lg:w-[940px]">
+              <Image
+                className="relative mt-[-4.00px] h-[365px] w-[508px] object-cover lg:h-[608px] lg:w-[848px]"
+                alt="Cas"
+                src={CAS}
+              />
+              <div className="relative h-[48px] w-[473px] text-[32px] font-semibold leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                Collegiate Academy of Seoul
+              </div>
+            </div>
+          </div>
+
+          <div className="flex w-screen items-center justify-center">
+            <div
+              onClick={() => {
+                setOpen(true);
+              }}
+              className="h-[335px] w-[600px] cursor-pointer rounded-[20px] bg-[url(/images/hero/image23.png)] bg-cover bg-[50%_50%] lg:h-[540px] lg:w-[940px]"
+            >
+              <div className="mt-24 flex items-center justify-center lg:mt-32">
+                <Image
+                  className="flex h-[170px] w-[170px] lg:h-[242px] lg:w-[242px]"
+                  alt="Button"
+                  src={Button}
                 />
-                <p className="absolute top-[180px] left-[166px] [font-family:'Poppins'] font-normal text-black text-[16px] tracking-[0] leading-[normal]">
+              </div>
+            </div>
+          </div>
+          <div className="flex w-screen flex-col items-center justify-center space-y-5">
+            <div className="whitespace-nowrap text-center text-[48px] font-extrabold leading-[58px] tracking-[0] text-white [font-family:'Poppins']">
+              Why Eduo?
+            </div>
+            <p className="whitespace-nowrap text-center text-[32px] font-semibold leading-[58px] tracking-[0] text-white [font-family:'Poppins']">
+              We provide the solution to all your problems.
+            </p>
+          </div>
+          <div className="flex w-screen flex-col items-center justify-center space-y-5">
+            <div className="flex">
+              <Image className="h-px w-[160px]" alt="Button play" src={Line} />
+            </div>
+          </div>
+          <div className="flex w-screen items-center justify-center">
+            <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-10 lg:space-y-0">
+              <div className="flex flex-col space-y-10">
+                <div className="flex flex-col space-y-3">
+                  <div className="ml-16 flex flex-row space-x-5">
+                    <Image className="flex" alt="Image" src={Book_check} />
+
+                    <div className="flex whitespace-nowrap text-[24px] font-bold leading-[32px] tracking-[0] text-white [font-family:'Poppins']">
+                      For Administrators
+                    </div>
+                  </div>
+
+                  <div className="flex">
+                    <p className="ml-32 text-[20px] font-semibold leading-[36px] tracking-[0] text-[#cccccc] [font-family:'Poppins']">
+                      • Faculty and student database
+                      <br />
+                      • Administrative documents
+                      <br />
+                      • Scheduling
+                      <br />• Automated transcripts
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col space-y-3">
+                  <div className="ml-16 flex flex-row space-x-5">
+                    <Image className="flex" alt="Image" src={Book_check} />
+
+                    <div className="flex whitespace-nowrap text-[24px] font-bold leading-[32px] tracking-[0] text-white [font-family:'Poppins']">
+                      For Teachers
+                    </div>
+                  </div>
+
+                  <div className="flex">
+                    <p className="ml-32 text-[20px] font-semibold leading-[36px] tracking-[0] text-[#cccccc] [font-family:'Poppins']">
+                      • Lesson planning support
+                      <br />
+                      • Tracking student progress
+                      <br />
+                      • Question generator
+                      <br />• Attendance management
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col space-y-10">
+                <div className="flex flex-col space-y-3">
+                  <div className="ml-16 flex flex-row space-x-5">
+                    <Image className="flex" alt="Image" src={Book_check} />
+
+                    <div className="flex whitespace-nowrap text-[24px] font-bold leading-[32px] tracking-[0] text-white [font-family:'Poppins']">
+                      For Students
+                    </div>
+                  </div>
+
+                  <div className="flex">
+                    <p className="ml-32 text-[20px] font-semibold leading-[36px] tracking-[0] text-[#cccccc] [font-family:'Poppins']">
+                      • Comprehensive workspace
+                      <br />
+                      • Discussion board
+                      <br />
+                      • Video lectures with distraction prevention
+                      <br />• College &amp; career counseling
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col space-y-3">
+                  <div className="ml-16 flex flex-row space-x-5">
+                    <Image className="flex" alt="Image" src={Book_check} />
+
+                    <div className="flex whitespace-nowrap text-[24px] font-bold leading-[32px] tracking-[0] text-white [font-family:'Poppins']">
+                      For Parents
+                    </div>
+                  </div>
+
+                  <div className="flex">
+                    <p className="ml-32 text-[20px] font-semibold leading-[36px] tracking-[0] text-[#cccccc] [font-family:'Poppins']">
+                      • Check tuition and invoice <br />
+                      • View grades and homework <br />
+                      • Monitor attendance and discipline <br />• Access
+                      calendar and other resources
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex w-screen items-center justify-center">
+            <div className="w-[317px] text-center text-[32px] font-semibold leading-[normal] tracking-[0] text-white [font-family:'Poppins']">
+              ...and more!
+            </div>
+          </div>
+        </div>
+        <div className="absolute top-[3350px] z-0 h-[2150px] w-screen bg-[url(/images/hero/Background2.png)] bg-cover bg-[50%_50%] bg-top lg:top-[3250px] lg:h-[1850px] xl:top-[2950px] " />
+
+        {/* Section #6 */}
+        <div className="absolute top-[5900px] h-[1748px] w-screen lg:top-[5500px] xl:top-[5200px]">
+          <div className="flex h-[2000px] flex-col space-y-32 bg-[#f0f0f0] lg:h-[1600px] xl:h-[1400px]">
+            <div className="mt-16 flex">
+              <div className="ml-32 w-[380px] text-[48px] font-semibold leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                Success Stories
+              </div>
+            </div>
+
+            <div className="flex w-screen items-center justify-center">
+              <div className="flex w-[90%] flex-col items-center justify-center space-x-6 lg:flex-row lg:items-start">
+                <div className="flex h-[250px] w-[250px]">
+                  <Image
+                    className="h-[160px] w-[200px]"
+                    alt="Img"
+                    src={Start}
+                  />
+                </div>
+
+                <div className="flex w-[550px] w-full flex-col space-y-5 xl:mt-20 xl:w-[72%] 2xl:w-[75%] 3xl:w-[63%]">
+                  <div className="flex">
+                    <p className="text-[40px] font-medium leading-[64px] text-black [font-family:'Poppins']">
+                      Eduo is one of the best tools I’ve utilized to teach my
+                      classes. It helps me to focus on what really matters for
+                      my students.
+                    </p>
+                  </div>
+                  <div className="flex w-[120%] flex-row">
+                    <div className="flex h-[100px] w-[150px]">
+                      <Image
+                        className="h-[100px] w-[100px]"
+                        alt="Element"
+                        src={User1}
+                      />
+                    </div>
+                    <div className="flex items-center">
+                      <p className="text-[24px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                        <span className="font-bold">
+                          Alexa
+                          <br />
+                        </span>
+                        <span className="font-medium [font-family:'Poppins']">
+                          Teacher at Collegiate Academy of Seoul
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex w-screen items-center justify-center">
+              <div className="flex w-[90%] flex-col items-center justify-center space-x-6 lg:flex-row lg:items-start">
+                <div className="flex w-[560px] w-full flex-col space-y-5 xl:mt-20 xl:w-[80%] 2xl:w-[65%] 3xl:w-[63%]">
+                  <div className="flex">
+                    <p className="text-[40px] font-medium leading-[64px] text-black [font-family:'Poppins']">
+                      Eduo is easy to navigate even for those who are new to
+                      digital tools. It helped our school maximize efficiency by
+                      digitizing records and optimizing administrative tasks.
+                    </p>
+                  </div>
+                  <div className="flex w-[120%] flex-row">
+                    <div className="flex h-[100px] w-[150px]">
+                      <Image
+                        className="h-[100px] w-[100px]"
+                        alt="Element"
+                        src={User2}
+                      />
+                    </div>
+                    <div className="flex items-center">
+                      <p className="text-[24px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                        <span className="font-bold">
+                          Tim
+                          <br />
+                        </span>
+                        <span className="font-medium [font-family:'Poppins']">
+                          Principal at Azabu Christian Academy
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex h-[250px] w-[250px]">
+                  <Image className="h-[160px] w-[200px]" alt="Img" src={End} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="no-scrollbar absolute top-[7800px] h-[1748px] w-screen overflow-x-auto lg:top-[7000px] xl:top-[6500px]">
+          <div className="absolute top-[150px] flex w-[1280px] flex-row xl:w-full">
+            <div className="ml-16 flex h-[360px] w-[1280px] flex-col space-y-16 bg-white">
+              <div className="flex">
+                <Image
+                  className="h-[76px] w-[228px] object-cover"
+                  alt="Image"
+                  src={EDUO_LOGO}
+                />
+              </div>
+              <div className="flex">
+                <p className="text-[16px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                   Copyright © 2024 Eduo Learning
                   <br />
                   All Rights Reserved.
                 </p>
-                <div className="absolute w-[233px] h-[211px] top-[111px] left-[1067px]">
-                  <p className="absolute w-[229px] top-[69px] left-0 [font-family:'Poppins'] font-normal text-black text-[16px] tracking-[0] leading-[normal]">
+              </div>
+            </div>
+
+            <div className="flex h-[360px] w-[1280px] flex-row justify-end bg-white">
+              <div className="flex h-[211px] w-[233px] flex-col space-y-5">
+                <div className="flex">
+                  <p className="w-[113px] text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    Address
+                  </p>
+                </div>
+                <div className="flex">
+                  <p className="w-[229px] text-[16px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                     12, Dogok-ro 2-gil, Gangnam-gu, Seoul, Republic of Korea
                   </p>
-                  <div className="absolute w-[113px] top-0 left-0 [font-family:'Poppins'] font-medium text-black text-[24px] tracking-[0] leading-[normal]">
-                    Address
-                  </div>
                 </div>
-                <div className="absolute w-[233px] h-[165px] top-[111px] left-[1307px]">
-                  <div className="absolute w-[81px] top-0 left-0 [font-family:'Poppins'] font-medium text-black text-[24px] tracking-[0] leading-[normal]">
+              </div>
+              <div className="flex h-[211px] w-[233px] flex-col space-y-5">
+                <div className="flex">
+                  <p className="w-[113px] text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                     Office
-                  </div>
-                  <p className="absolute w-[229px] top-[69px] left-0 [font-family:'Poppins'] font-normal text-black text-[16px] tracking-[0] leading-[normal]">
+                  </p>
+                </div>
+                <div className="flex">
+                  <p className="w-[229px] text-[16px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                     Monday - Friday
                     <br />
                     9AM - 6PM
                   </p>
                 </div>
-                <div className="absolute w-[233px] h-[165px] top-[111px] left-[1547px]">
-                  <p className="absolute w-[229px] top-[69px] left-0 [font-family:'Poppins'] font-normal text-black text-[16px] tracking-[0] leading-[normal]">
-                    <span className="[font-family:'Poppins'] font-normal text-black text-[16px] tracking-[0]">
+              </div>
+              <div className="flex h-[211px] w-[233px] flex-col space-y-5">
+                <div className="flex">
+                  <p className="w-[113px] text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    Contact
+                  </p>
+                </div>
+                <div className="flex">
+                  <p className="w-[229px] text-[16px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
+                    <span className="text-[16px] font-normal tracking-[0] text-black [font-family:'Poppins']">
                       +82 0507-1493-7931
                     </span>
                     <a
@@ -508,36 +598,21 @@ const Hero = () => {
                     >
                       <span className="underline"> </span>
                     </a>
-                    <span className="[font-family:'Poppins'] font-normal text-black text-[16px] tracking-[0]">
+                    <span className="text-[16px] font-normal tracking-[0] text-black [font-family:'Poppins']">
                       admin@casseoul.org
                     </span>
                   </p>
-                  <div className="absolute w-[112px] top-0 left-0 [font-family:'Poppins'] font-medium text-black text-[24px] tracking-[0] leading-[normal]">
-                    Contact
-                  </div>
                 </div>
               </div>
             </div>
-            <img className="absolute w-[1920px] h-[100px] top-0 left-0" alt="Wave" src="/images/hero/wave_2.png" />
+          </div>
+          <div className="absolute w-[1280px] xl:w-screen">
+            <Image className="h-[100px]" alt="Wave" src={Wave2} />
           </div>
         </div>
       </div>
-    </div> 
-    
+    </div>
   );
 };
 
 export default Hero;
-
-// import React from "react";
-// import { BookCheck } from "./BookCheck";
-// import { Group } from "./Group";
-// import { Saly } from "./Saly";
-// import { Sertificate } from "./Sertificate";
-
-// export const EduoWebLanding = (): JSX.Element => {
-//   return (
-    
-//   );
-// };
-
