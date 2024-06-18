@@ -15,6 +15,7 @@ const Header = () => {
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
@@ -25,10 +26,15 @@ const Header = () => {
 
   const handleResize = () => {
     const width = window.innerWidth;
-    if (width < 1280) {
+    if (width < 640) {
       setSticky(true);
+      setNavbar(false);
+    } else if (width < 1280) {
+      setSticky(true);
+      setNavbar(true);
     } else {
       setSticky(false);
+      setNavbar(true);
     }
   };
 
@@ -86,10 +92,12 @@ const Header = () => {
         <div className="relative flex h-20 w-full max-w-screen-2xl items-center justify-between px-4">
           <div className="flex w-full items-center justify-between ">
             <div
-              className="ml-20 h-10 w-[120px] bg-cover bg-center"
+              className="h-10 w-[120px] bg-cover bg-center xl:ml-20"
               style={{ backgroundImage: "url(/images/logo/EDUO_LOGO.png)" }}
             ></div>
-            <div className="flex w-1/4 items-center justify-end">
+            <div
+              className={`${navbar ? "visible" : "invisible"} flex w-1/4 items-center justify-end`}
+            >
               <div className="flex ">
                 <div
                   onClick={scrollToTop}
