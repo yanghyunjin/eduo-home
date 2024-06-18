@@ -45,7 +45,7 @@ const Hero = () => {
       />
       <div className="relative h-[8200px] w-screen flex-col overflow-hidden bg-white lg:h-[7400px] xl:h-[6900px]">
         {/* Section #1 */}
-        <div className="absolute inset-0 top-[-265px] h-[1150px] w-screen xl:top-[-350px]">
+        <div className="absolute inset-0 top-[-275px] h-[1150px] w-screen xl:top-[-350px]">
           <div className="relative top-[350px] flex h-[1000px] w-screen flex-col bg-[url(/images/hero/Background.png)] bg-cover bg-center bg-no-repeat xl:h-[800px] xl:bg-[100%_100%]">
             <div className="inset-0 flex flex-col items-center justify-center">
               <Image
