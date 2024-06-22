@@ -235,7 +235,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="no-scrollbar ml-1.5 mr-1.5 flex h-[440px] flex-row items-center space-x-16 overflow-x-auto sm:ml-10 sm:mr-10 xl:w-screen xl:justify-center">
+          <div className="no-scrollbar ml-10 mr-10 flex h-[440px] flex-row items-center space-x-16 overflow-x-auto sm:ml-10 sm:mr-10 xl:w-screen xl:justify-center">
             <div className="flex w-[400px] items-center justify-center rounded-[20px]">
               <div className="flex h-[442px] w-[362px] flex-col items-center justify-center space-y-12 rounded-[20px] bg-white">
                 <Image
@@ -278,9 +278,11 @@ const Hero = () => {
                   src={Saly_2}
                 />
                 <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
-                  LMS
+                  College Counseling
                   <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                    Systematic counseling support through accumulated admissions
+                    Systematic counseling support<br/>
+                     through accumulated<br/>
+                    admissions
                     data
                   </p>
                 </div>
