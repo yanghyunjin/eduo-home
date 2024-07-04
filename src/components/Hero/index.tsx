@@ -208,16 +208,6 @@ const Hero = () => {
               alt="Image"
               src={Client5}
             />
-            <Image
-              className="flex h-[054px] w-[193px]"
-              alt="Image"
-              src={Client6}
-            />
-            <Image
-              className="flex h-[054px] w-[310px]"
-              alt="Image"
-              src={Client7}
-            />
           </div>
         </div>
 
@@ -280,10 +270,11 @@ const Hero = () => {
                 <div className="text-center text-[24px] font-medium leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                   College Counseling
                   <p className="text-center text-[16px] font-normal leading-[30px] tracking-[0] text-black [font-family:'Poppins']">
-                    Systematic counseling support<br/>
-                     through accumulated<br/>
-                    admissions
-                    data
+                    Systematic counseling support
+                    <br />
+                    through accumulated
+                    <br />
+                    admissions data
                   </p>
                 </div>
               </div>
