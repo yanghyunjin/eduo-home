@@ -208,6 +208,16 @@ const Hero = () => {
               alt="Image"
               src={Client5}
             />
+            <Image
+              className="flex h-[054px] w-[193px]"
+              alt="Image"
+              src={Client6}
+            />
+            <Image
+              className="flex h-[054px] w-[310px]"
+              alt="Image"
+              src={Client7}
+            />
           </div>
         </div>
 
