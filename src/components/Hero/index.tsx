@@ -603,7 +603,7 @@ const Hero = () => {
                 <div className="flex">
                   <p className="w-[229px] text-[16px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                     <span className="text-[16px] font-normal tracking-[0] text-black [font-family:'Poppins']">
-                      +82 0507-1493-7931
+                    +82 10-6624-9181
                     </span>
                     <a
                       href="https://pcmap.place.naver.com/place/1592159038/home?from=map&amp;fromPanelNum=1&amp;timestamp=202404142150#"
@@ -613,7 +613,7 @@ const Hero = () => {
                       <span className="underline"> </span>
                     </a>
                     <span className="text-[16px] font-normal tracking-[0] text-black [font-family:'Poppins']">
-                      admin@casseoul.org
+                    eduo.learning.global@gmail.com
                     </span>
                   </p>
                 </div>
