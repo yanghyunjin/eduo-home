@@ -613,7 +613,7 @@ const Hero = () => {
                       <span className="underline"> </span>
                     </a>
                     <span className="text-[16px] font-normal tracking-[0] text-black [font-family:'Poppins']">
-                    eduo.learning.global<br/>@gmail.com
+                    support@eduolearning.com
                     </span>
                   </p>
                 </div>
