@@ -14,6 +14,9 @@ import Client4 from "/public/images/hero/client4.png";
 import Client5 from "/public/images/hero/client5.png";
 import Client6 from "/public/images/hero/client6.png";
 import Client7 from "/public/images/hero/client7.png";
+import Client8 from "/public/images/hero/client8.jpeg";
+import Client9 from "/public/images/hero/client9.jpeg";
+import Client10 from "/public/images/hero/client10.jpeg";
 import Saly_1 from "/public/images/hero/saly_1.png";
 import Saly_2 from "/public/images/hero/saly_2.png";
 import Saly_3 from "/public/images/hero/saly_3.png";
@@ -182,41 +185,53 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="no-scrollbar absolute top-[180px] ml-10 mr-10 flex flex-row items-center space-x-8 overflow-x-auto sm:ml-0 sm:mr-0 sm:w-full sm:space-x-2 xl:w-full xl:justify-center">
+          <div className="absolute top-[180px]  grid w-full grid-cols-5 place-items-center gap-x-6 gap-y-4 px-10 sm:px-0 xl:w-full">
             <Image
-              className="flex h-[117px] w-[117px]"
+              className="h-[100px] w-auto object-contain"
               alt="Image"
               src={Client1}
             />
             <Image
-              className="flex h-[054px] w-[174px]"
+              className="h-[72px] w-auto object-contain"
               alt="Image"
               src={Client2}
             />
             <Image
-              className="flex h-[117px] w-[117px]"
+              className="h-[100px] w-auto object-contain"
               alt="Image"
               src={Client3}
             />
             <Image
-              className="flex h-[117px] w-[155px]"
+              className="h-[100px] w-auto object-contain"
               alt="Image"
               src={Client4}
             />
             <Image
-              className="flex h-[117px] w-[148px]"
+              className="h-[100px] w-auto object-contain"
               alt="Image"
               src={Client5}
             />
-            {/*<Image
-              className="flex h-[054px] w-[193px]"
-              alt="Image"
-              src={Client6}
-            />*/}
+            {/* <Image className="h-[72px] w-auto object-contain" alt="Image" src={Client6} /> */}
+            {/* <Image className="h-[72px] w-auto object-contain" alt="Image" src={Client7} /> */}
             <Image
-              className="flex h-[054px] w-[310px]"
+              className="h-[72px] w-auto object-contain"
               alt="Image"
               src={Client7}
+            />
+            <Image
+              className="h-[100px] w-auto object-contain"
+              alt="Image"
+              src={Client8}
+            />
+            <Image
+              className="h-[100px] w-auto object-contain"
+              alt="Image"
+              src={Client9}
+            />
+            <Image
+              className="h-[100px] w-auto object-contain"
+              alt="Image"
+              src={Client10}
             />
           </div>
         </div>
@@ -454,7 +469,7 @@ const Hero = () => {
         <div className="absolute top-[2900px] z-0 h-[1400px] h-[2150px] w-screen bg-[url(/images/hero/Background2.png)] bg-cover bg-[50%_50%] bg-top sm:top-[3350px] lg:top-[3250px] lg:h-[1850px] xl:top-[2950px] " />
 
         {/* Section #6 */}
-        <div className="absolute top-[4700px] h-[1748px] w-screen sm:top-[5900px] lg:top-[5500px] xl:top-[5200px]">
+        <div className="absolute top-[4720px] h-[1728px] w-screen sm:top-[5920px] lg:top-[5520px] xl:top-[5220px]">
           <div className="flex h-[2000px] flex-col space-y-8 bg-[#f0f0f0] sm:space-y-32 lg:h-[1600px] xl:h-[1400px]">
             <div className="mt-16 flex items-center justify-center sm:justify-start">
               <div className="text-[38px] font-semibold leading-[normal] tracking-[0] text-black [font-family:'Poppins'] sm:ml-32 sm:w-[380px] sm:text-[48px]">
@@ -603,7 +618,7 @@ const Hero = () => {
                 <div className="flex">
                   <p className="w-[229px] text-[16px] font-normal leading-[normal] tracking-[0] text-black [font-family:'Poppins']">
                     <span className="text-[16px] font-normal tracking-[0] text-black [font-family:'Poppins']">
-                    +82 10-6624-9181
+                      +82 10-6624-9181
                     </span>
                     <a
                       href="https://pcmap.place.naver.com/place/1592159038/home?from=map&amp;fromPanelNum=1&amp;timestamp=202404142150#"
@@ -613,7 +628,7 @@ const Hero = () => {
                       <span className="underline"> </span>
                     </a>
                     <span className="text-[16px] font-normal tracking-[0] text-black [font-family:'Poppins']">
-                    support@eduolearning.com
+                      support@eduolearning.com
                     </span>
                   </p>
                 </div>
