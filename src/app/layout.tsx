@@ -25,6 +25,12 @@ export default function RootLayout({
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           />
+        <meta
+          content="https://eduo.kr/images/logo/logo.svg"
+          property="og:image"
+        />
+        <meta content="summary_large_image" name="twitter:card" />
+        <meta content="https://eduo.kr/images/logo/logo.svg" name="twitter:image" />
       </head>
 
       <body className={`bg-white ${inter.className}`}>
