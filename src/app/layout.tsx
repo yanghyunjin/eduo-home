@@ -26,11 +26,14 @@ export default function RootLayout({
             rel="stylesheet"
           />
         <meta
-          content="https://eduo.kr/images/logo/logo.svg"
+          content="https://eduo.kr/images/logo/EDUO_LOGO.png"
           property="og:image"
         />
         <meta content="summary_large_image" name="twitter:card" />
-        <meta content="https://eduo.kr/images/logo/logo.svg" name="twitter:image" />
+        <meta
+          content="https://eduo.kr/images/logo/EDUO_LOGO.png"
+          name="twitter:image"
+        />
       </head>
 
       <body className={`bg-white ${inter.className}`}>
