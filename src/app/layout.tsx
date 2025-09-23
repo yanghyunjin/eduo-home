@@ -26,12 +26,12 @@ export default function RootLayout({
             rel="stylesheet"
           />
         <meta
-          content="https://eduo.kr/images/logo/EDUO_LOGO.png"
+          content="https://www.eduolearning.com/images/logo/EDUO_LOGO.png"
           property="og:image"
         />
         <meta content="summary_large_image" name="twitter:card" />
         <meta
-          content="https://eduo.kr/images/logo/EDUO_LOGO.png"
+          content="https://www.eduolearning.com/images/logo/EDUO_LOGO.png"
           name="twitter:image"
         />
       </head>
