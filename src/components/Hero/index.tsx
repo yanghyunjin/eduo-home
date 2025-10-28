@@ -17,6 +17,7 @@ import Client9 from "/public/images/hero/client9.jpeg";
 import Client10 from "/public/images/hero/client10.jpeg";
 import Client11 from "/public/images/hero/client11.png";
 import Client12 from "/public/images/hero/client12.png";
+import Client13 from "/public/images/hero/client13.png";
 import Saly_1 from "/public/images/hero/saly_1.png";
 import Saly_2 from "/public/images/hero/saly_2.png";
 import Saly_3 from "/public/images/hero/saly_3.png";
@@ -137,6 +138,7 @@ const clients: StaticImageData[] = [
   Client10,
   Client11,
   Client12,
+  Client13
 ];
 
 type Testimonial = {
