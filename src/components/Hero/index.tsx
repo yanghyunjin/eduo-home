@@ -1,175 +1,37 @@
 "use client";
-import React, { useState } from "react";
-import Image, { type StaticImageData } from "next/image";
+
+import Image from "next/image";
+import { useState } from "react";
 import ModalVideo from "react-modal-video";
 
-import Hero1 from "/public/images/hero/hero1.png";
-import Done_all_alt_round_fill from "/public/images/hero/Done_all_alt_round_fill.png";
-import Client1 from "/public/images/hero/client1.png";
-import Client2 from "/public/images/hero/client2.png";
-import Client3 from "/public/images/hero/client3.png";
-import Client4 from "/public/images/hero/client4.png";
-import Client5 from "/public/images/hero/client5.png";
-// import Client6 from "/public/images/hero/client6.png";
-import Client7 from "/public/images/hero/client7.png";
-import Client8 from "/public/images/hero/client8.jpeg";
-import Client9 from "/public/images/hero/client9.jpeg";
-import Client10 from "/public/images/hero/client10.jpeg";
-import Client11 from "/public/images/hero/client11.png";
-import Client12 from "/public/images/hero/client12.png";
-import Client13 from "/public/images/hero/client13.png";
-import Saly_1 from "/public/images/hero/saly_1.png";
-import Saly_2 from "/public/images/hero/saly_2.png";
-import Saly_3 from "/public/images/hero/saly_3.png";
-import EDUO_LOGO from "/public/images/logo/EDUO_LOGO.png";
-import Book_check from "/public/images/hero/Book_check.png";
-import Certificate from "/public/images/hero/Certificate.png";
-import Group from "/public/images/hero/Group.png";
-import Button from "/public/images/hero/Button.png";
-import Line from "/public/images/hero/Line.png";
-import CAS from "/public/images/hero/CAS.png";
-import Start from "/public/images/hero/start.png";
-import User1 from "/public/images/hero/user1.png";
-import User2 from "/public/images/hero/user2.png";
-import Wave2 from "/public/images/hero/wave_2.png";
+import EduoLogo from "/public/images/logo/EDUO_LOGO.png";
+import HeroBackground from "/public/images/figma-home/2-3165.png";
+import LogoStrip from "/public/images/figma-home/2-3174.png";
+import AdminIcon from "/public/images/figma-home/2-3198.png";
+import TeacherIcon from "/public/images/figma-home/2-3202.png";
+import StudentIcon from "/public/images/figma-home/2-3206.png";
+import ParentIcon from "/public/images/figma-home/2-3210.png";
+import EduoDiagram from "/public/images/figma-home/2-3215.png";
+import OperationsBackground from "/public/images/figma-home/case-study-bg.png";
+import OperationsCard from "/public/images/figma-home/2-3221.png";
+import MobileImage from "/public/images/figma-home/2-3228.png";
+import FlexibleOne from "/public/images/figma-home/2-3235.png";
+import FlexibleTwo from "/public/images/figma-home/2-3237.png";
+import TestimonialCard from "/public/images/figma-home/2-3244.png";
+import ValuesImage from "/public/images/figma-home/2-3246.png";
 
-const benefitGroups: string[][] = [
-  [
-    "Access anytime, anywhere",
-    "Regular updates",
-    "Strong STEM, AP curriculum",
-    "K-Education touches",
-  ],
-  [
-    "Intuitive and easy to use",
-    "Affordable",
-    "Made by teachers",
-    "Distinct features for administrators, teachers, students, and parents",
-  ],
+const roles = [
+  { label: "For administrator", image: AdminIcon },
+  { label: "For teacher", image: TeacherIcon },
+  { label: "For student", image: StudentIcon },
+  { label: "For parent", image: ParentIcon },
 ];
 
-type Service = {
-  title: string;
-  description: string;
-  image: StaticImageData;
-  imageClassName: string;
-};
-
-const services: Service[] = [
-  {
-    title: "SIS",
-    description: "Essential tools for efficient school operations at your fingertips.",
-    image: Saly_1,
-    imageClassName: "h-28 w-40",
-  },
-  {
-    title: "LMS",
-    description: "Accredited courses prepared and taught by qualified instructors.",
-    image: Saly_3,
-    imageClassName: "h-40 w-32",
-  },
-  {
-    title: "College Counseling",
-    description: "Systematic counseling support powered by accumulated admissions data.",
-    image: Saly_2,
-    imageClassName: "h-40 w-40",
-  },
-];
-
-type Audience = {
-  title: string;
-  icon: StaticImageData;
-  items: string[];
-};
-
-const audiences: Audience[] = [
-  {
-    title: "For Administrators",
-    icon: Book_check,
-    items: [
-      "Faculty and student database",
-      "Administrative documents",
-      "Scheduling",
-      "Automated transcripts",
-    ],
-  },
-  {
-    title: "For Students",
-    icon: Group,
-    items: [
-      "Comprehensive workspace",
-      "Discussion board",
-      "Video lectures with distraction prevention",
-      "College & career counseling",
-    ],
-  },
-  {
-    title: "For Teachers",
-    icon: Certificate,
-    items: [
-      "Lesson planning support",
-      "Tracking student progress",
-      "Question generator",
-      "Attendance management",
-    ],
-  },
-  {
-    title: "For Parents",
-    icon: Group,
-    items: [
-      "Check tuition and invoice",
-      "View grades and homework",
-      "Monitor attendance and discipline",
-      "Access calendar and other resources",
-    ],
-  },
-];
-
-const clients: StaticImageData[] = [
-  Client1,
-  Client2,
-  Client3,
-  Client4,
-  Client5,
-  // Client6,
-  Client7,
-  Client8,
-  Client9,
-  Client10,
-  Client11,
-  Client12,
-  Client13
-];
-
-type Testimonial = {
-  quote: string;
-  author: string;
-  role: string;
-  avatar: StaticImageData;
-};
-
-const testimonials: Testimonial[] = [
-  {
-    quote:
-      "Eduo is one of the best tools I’ve utilized to teach my classes. It helps me to focus on what really matters for my students.",
-    author: "Alexa",
-    role: "Teacher at Collegiate Academy of Seoul",
-    avatar: User1,
-  },
-  {
-    quote:
-      "Eduo is easy to navigate even for those who are new to digital tools. It helped our school maximize efficiency by digitizing records and optimizing administrative tasks.",
-    author: "Tim",
-    role: "Principal at Azabu Christian Academy",
-    avatar: User2,
-  },
-];
-
-const Hero = () => {
+const Home = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="bg-white text-black">
+    <main className="bg-white font-serif text-[#0f0f12]">
       <ModalVideo
         channel="custom"
         autoplay
@@ -179,230 +41,215 @@ const Hero = () => {
         onClose={() => setOpen(false)}
       />
 
-      <section className="relative overflow-hidden bg-[url(/images/hero/Background.png)] bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#5740d9]/90 via-[#5945e0]/70 to-[#5c68f7]/80 md:hidden" />
-        <div className="relative mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 py-20 text-white md:flex-row md:items-center md:justify-between md:py-24">
-          <div className="flex max-w-xl flex-col items-center gap-6 text-center md:items-start md:text-left">
-            <h1 className="text-3xl font-semibold leading-tight sm:text-5xl sm:leading-[1.1]">
-              Transform your school with Eduo:
-            </h1>
-            <p className="text-base font-medium sm:text-xl">
-              a single solution designed to streamline administrative processes and enhance
-              learning outcomes
-            </p>
-          </div>
-          <div className="relative flex w-full max-w-sm justify-center md:max-w-md md:flex-1 md:justify-end">
-            <Image
-              src={Hero1}
-              alt="Students learning online"
-              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-              priority
-            />
+      <section
+        id="home"
+        className="relative flex min-h-[800px] items-center justify-center overflow-hidden text-white"
+      >
+        <Image
+          src={HeroBackground}
+          alt="Students using EDUO in a classroom"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="relative z-10 mx-auto flex w-full max-w-[980px] flex-col items-center px-6 text-center">
+          <h1 className="max-w-[820px] text-[42px] font-semibold leading-[0.96] tracking-[-0.02em] sm:text-[72px]">
+            All-in-one education
+            <br />
+            management solution.
+          </h1>
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="mt-10 rounded-full bg-[#7037d8] px-8 py-3 font-sans text-sm font-semibold text-white transition hover:bg-[#5c28bf]"
+          >
+            Explore the platform
+          </button>
+        </div>
+      </section>
+
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-[1152px] text-center">
+          <p className="font-sans text-sm font-semibold text-[#171717]">
+            Join 10,000+ owners, directors, teachers, and families already on EDUO learning
+          </p>
+          <div className="logo-marquee mt-9 overflow-hidden">
+            <div className="logo-marquee-track flex w-max items-center">
+              {[0, 1].map((index) => (
+                <Image
+                  key={index}
+                  src={LogoStrip}
+                  alt={index === 0 ? "Schools and partners using EDUO" : ""}
+                  aria-hidden={index === 1}
+                  className="h-[84px] w-[1325px] max-w-none shrink-0 object-contain"
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-24">
-        <div className="mx-auto flex max-w-4xl flex-col items-center gap-10 px-6">
-          <h2 className="text-center text-2xl font-medium leading-snug sm:text-4xl">
-            Empower your educators and inspire your students with our all-in-one education platform
+      <section id="about" className="px-6 pb-28 pt-10">
+        <div className="mx-auto max-w-[1200px] text-center">
+          <h2 className="text-[40px] font-semibold leading-tight tracking-[-0.02em] sm:text-[56px]">
+            Smart solution for everyone
           </h2>
-          <div className="grid w-full gap-10 md:grid-cols-2">
-            {benefitGroups.map((group, columnIndex) => (
-              <div key={columnIndex} className="flex flex-col gap-6">
-                {group.map((benefit) => (
-                  <div key={benefit} className="flex items-start gap-4">
-                    <Image
-                      src={Done_all_alt_round_fill}
-                      alt="Check icon"
-                      className="h-10 w-8 flex-shrink-0 sm:h-12 sm:w-10"
-                    />
-                    <p className="text-base font-medium sm:text-xl">{benefit}</p>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f6f4ff] py-16 sm:py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold sm:text-4xl">Our Services</h2>
-            <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-black/80 sm:text-lg">
-              Eduo was founded with the purpose of providing an integrated platform to complement
-              schools in their operations and classroom management.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="flex flex-col items-center gap-6 rounded-3xl bg-white p-10 text-center shadow-[0_0_35px_rgba(15,23,42,0.08)]"
-              >
+          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            {roles.map((role) => (
+              <div key={role.label} className="flex flex-col items-center">
                 <Image
-                  src={service.image}
-                  alt={service.title}
-                  className={`${service.imageClassName} object-contain`}
+                  src={role.image}
+                  alt={role.label}
+                  className="aspect-square w-full max-w-[260px] rounded-[6px] object-cover"
                 />
-                <div>
-                  <h3 className="text-2xl font-semibold">{service.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-black/80 sm:text-base">
-                    {service.description}
-                  </p>
-                </div>
+                <p className="mt-5 font-mono text-sm font-medium text-[#171717]">{role.label}</p>
               </div>
             ))}
           </div>
+          <button className="mt-14 rounded-full bg-[#7037d8] px-7 py-3 font-sans text-sm font-semibold text-white">
+            Discover more
+          </button>
         </div>
       </section>
 
-      <section className="relative bg-white py-16 sm:py-24">
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6">
-          <div className="flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-center sm:gap-6">
-            <h2 className="text-3xl font-semibold sm:text-4xl">A Sneak Peek into</h2>
-            <Image src={EDUO_LOGO} alt="Eduo" className="h-10 w-auto sm:h-12" />
-          </div>
-          <div className="grid gap-10 lg:grid-cols-2">
-            <div className="hidden flex-col gap-6 rounded-3xl bg-white p-8 text-center shadow-[0_0_35px_rgba(15,23,42,0.08)] lg:flex">
-              <Image
-                src={CAS}
-                alt="Collegiate Academy of Seoul dashboard"
-                className="w-full rounded-2xl object-cover"
-              />
-              <p className="text-xl font-semibold text-black sm:text-2xl">Collegiate Academy of Seoul</p>
-            </div>
-            <button
-              type="button"
-              onClick={() => setOpen(true)}
-              className="relative flex min-h-[260px] flex-col items-center justify-center overflow-hidden rounded-3xl bg-[url(/images/hero/image23.png)] bg-cover bg-center px-6 py-12 text-center shadow-[0_0_35px_rgba(15,23,42,0.2)] focus:outline-none focus-visible:ring-4 focus-visible:ring-indigo-200"
-            >
-              <Image src={Button} alt="Play video" className="h-24 w-24 sm:h-40 sm:w-40" />
-              <p className="mt-6 text-lg font-semibold text-black lg:hidden">Collegiate Academy of Seoul</p>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden bg-[url(/images/hero/Background2.png)] bg-cover bg-top py-16 text-white sm:py-24">
-        <div className="absolute inset-0 bg-[#0f1c59]/90" />
-        <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-6">
-          <div className="flex flex-col items-center text-center">
-            <h2 className="text-3xl font-extrabold sm:text-5xl">Why Eduo?</h2>
-            <p className="mt-4 text-lg font-semibold sm:text-2xl">
-              We provide the solution to all your problems.
-            </p>
-            <Image src={Line} alt="Divider" className="mt-6 h-px w-40" />
-          </div>
-          <div className="grid w-full max-w-5xl gap-12 md:grid-cols-2 mx-auto">
-            {audiences.map((audience) => (
-              <div key={audience.title} className="flex flex-col gap-4">
-                <div className="flex items-center gap-4">
-                  <Image src={audience.icon} alt={audience.title} className="h-14 w-14" />
-                  <h3 className="text-2xl font-bold">{audience.title}</h3>
-                </div>
-                <ul className="ml-1 space-y-2 text-sm font-semibold text-[#cccccc] sm:text-lg">
-                  {audience.items.map((item) => (
-                    <li key={item} className="list-disc pl-4">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-2xl font-semibold">...and more!</p>
-        </div>
-      </section>
-
-      <section className="bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-center text-3xl font-semibold sm:text-4xl">Our Clients</h2>
-          <div className="mt-12 grid grid-cols-2 place-items-center gap-8 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-            {clients.map((client, index) => (
-              <Image
-                key={index}
-                src={client}
-                alt={`Client logo ${index + 1}`}
-                className="h-20 w-auto object-contain"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#f7f8fc] py-16 sm:py-24">
-        <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-3xl font-semibold text-black sm:text-4xl">Success Stories</h2>
-          <div className="mt-12 grid gap-8">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.author}
-                className="relative overflow-hidden rounded-3xl bg-white px-8 py-10 shadow-[0_0_35px_rgba(15,23,42,0.08)] sm:px-16 sm:py-14"
-              >
-                <Image
-                  src={Start}
-                  alt="Quote mark"
-                  className="pointer-events-none select-none absolute -left-4 top-6 h-24 w-24 opacity-10 sm:-left-2 sm:-top-2 sm:h-40 sm:w-40"
-                />
-                <p className="relative pl-12 text-lg font-medium leading-relaxed text-black sm:pl-16 sm:text-3xl sm:leading-[1.5]">
-                  {testimonial.quote}
-                </p>
-                <div className="relative mt-8 flex items-center gap-4 pl-12 sm:pl-16">
-                  <Image src={testimonial.avatar} alt={testimonial.author} className="h-16 w-16 rounded-full" />
-                  <div className="text-sm text-black sm:text-lg">
-                    <p className="font-bold">{testimonial.author}</p>
-                    <p className="font-medium text-black/70">{testimonial.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <footer className="relative bg-white pt-12">
-        <Image src={Wave2} alt="Decorative wave" className="w-full object-cover" />
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-12 sm:flex-row sm:items-start sm:justify-between">
-          <div className="flex flex-col gap-6">
-            <Image src={EDUO_LOGO} alt="Eduo logo" className="h-12 w-auto object-contain" />
-            <p className="text-sm leading-relaxed">
-              Copyright © 2024 Eduo Learning
-              <br />
-              All Rights Reserved.
+      <section className="px-6 pb-28">
+        <div className="mx-auto max-w-[1200px]">
+          <Image src={EduoDiagram} alt="What is EDUO diagram" className="w-full rounded-[4px]" />
+          <div className="mx-auto mt-16 max-w-[1072px] text-center">
+            <h2 className="text-[40px] font-semibold leading-tight tracking-[-0.02em] sm:text-[56px]">
+              Connected ecosystem
+            </h2>
+            <p className="mt-8 font-sans text-sm font-semibold leading-6">
+              Administrators, educators, students, and families stay connected through one unified
+              system designed for real-time collaboration and communication.
             </p>
           </div>
-          <div className="grid gap-10 sm:grid-cols-3">
-            <div className="flex flex-col gap-4">
-              <h3 className="text-lg font-medium">Address</h3>
-              <p className="text-sm leading-relaxed">
-                12, Dogok-ro 2-gil, Gangnam-gu,
-                <br />
-                Seoul, Republic of Korea
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h3 className="text-lg font-medium">Office</h3>
-              <p className="text-sm leading-relaxed">
-                Monday - Friday
-                <br />
-                9AM - 6PM
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h3 className="text-lg font-medium">Contact</h3>
-              <p className="text-sm leading-relaxed">
-                +82 10-6624-9181
-                <br />
-                support@eduolearning.com
-              </p>
-            </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden pb-[96px] pt-[120px]">
+        <Image
+          src={OperationsBackground}
+          alt="EDUO operations background"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-white/15" />
+        <div className="relative mx-auto max-w-[1020px] px-6">
+          <div className="flex flex-col items-center gap-10 rounded-[12px] bg-white/90 p-10 shadow-[0_20px_70px_rgba(15,23,42,0.18)] md:flex-row">
+            <Image src={OperationsCard} alt="EDUO connected workflows" className="w-full rounded-[4px] md:w-[498px]" />
+            <p className="font-sans text-lg font-semibold leading-7 md:max-w-[424px]">
+              Attendance, grading, reporting, scheduling, communication, and approvals are
+              seamlessly connected into practical day-to-day workflows.
+            </p>
+          </div>
+          <h2 className="mt-20 text-center text-[40px] font-semibold leading-tight tracking-[-0.02em] sm:text-[56px]">
+            Unified operations
+          </h2>
+        </div>
+      </section>
+
+      <section className="px-6 py-[120px]">
+        <div className="mx-auto grid max-w-[1240px] items-center gap-14 md:grid-cols-2">
+          <Image src={MobileImage} alt="EDUO mobile app" className="w-full rounded-[4px]" />
+          <div>
+            <h2 className="text-[40px] font-semibold leading-tight tracking-[-0.02em] sm:text-[56px]">
+              Mobile-first experience
+            </h2>
+            <p className="mt-8 font-sans text-lg font-semibold leading-7">
+              EDUO keeps your educational community connected across desktop and mobile with
+              real-time updates, notifications, and communication tools.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-[120px]">
+        <div className="mx-auto max-w-[1200px]">
+          <div className="grid gap-10 md:grid-cols-2">
+            <Image src={FlexibleOne} alt="Students learning with EDUO" className="w-full rounded-[4px]" />
+            <Image src={FlexibleTwo} alt="Classroom using EDUO" className="w-full rounded-[4px]" />
+          </div>
+          <div className="mx-auto mt-16 max-w-[800px] text-center">
+            <h2 className="text-[40px] font-semibold leading-tight tracking-[-0.02em] sm:text-[56px]">
+              Flexible for every organization
+            </h2>
+            <p className="mt-8 font-sans text-sm font-semibold leading-6">
+              Every learning organization operates differently. EDUO adapts to your structure,
+              workflows, and operational needs through customizable solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-[120px]">
+        <div className="mx-auto max-w-[1030px] text-center">
+          <h2 className="text-[44px] font-semibold leading-[0.96] tracking-[-0.03em] sm:text-[72px]">
+            Built by educator,
+            <br />
+            and for educator
+          </h2>
+          <Image
+            src={TestimonialCard}
+            alt="Before EDUO testimonial"
+            className="mx-auto mt-14 w-full max-w-[738px] rounded-[4px]"
+          />
+        </div>
+      </section>
+
+      <section className="relative min-h-[680px] overflow-hidden">
+        <Image src={ValuesImage} alt="Students enjoying class" fill className="object-cover" sizes="100vw" />
+      </section>
+
+      <section id="contact" className="px-6 py-24 text-center">
+        <h2 className="mx-auto max-w-[880px] text-[30px] font-semibold leading-tight tracking-[-0.02em] sm:text-[40px]">
+          Schedule a quick call to learn how EDUO learning can turn your school into a powerful advantage
+        </h2>
+        <a
+          href="mailto:support@eduolearning.com"
+          className="mt-10 inline-flex rounded-full bg-[#7037d8] px-20 py-3 font-sans text-sm font-semibold text-white transition hover:bg-[#5c28bf]"
+        >
+          Contact with us
+        </a>
+      </section>
+
+      <footer className="border-t border-black/5 px-6 py-12">
+        <div className="mx-auto flex max-w-[1152px] flex-col gap-12">
+          <nav className="flex gap-10 font-sans text-xs font-semibold">
+            <a href="#about">Company</a>
+            <a href="#about">We built for</a>
+            <a href="#contact">Resources</a>
+          </nav>
+          <div className="flex items-end justify-between gap-8">
+            <Image src={EduoLogo} alt="EDUO" className="h-10 w-auto object-contain" />
+            <p className="font-sans text-xs text-black/45">EDUO Learning. 2024. All Rights Reserved</p>
           </div>
         </div>
       </footer>
-    </div>
+
+      <style jsx>{`
+        .logo-marquee {
+          mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+        }
+
+        .logo-marquee-track {
+          animation: logo-marquee 28s linear infinite;
+        }
+
+        @keyframes logo-marquee {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
+    </main>
   );
 };
 
-export default Hero;
+export default Home;
