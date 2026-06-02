@@ -5,8 +5,8 @@ import Image from "next/image";
 import EduoLogo from "/public/images/logo/EDUO_LOGO.png";
 
 const navItems = [
-  { label: "Company", href: "#about" },
-  { label: "We built for", href: "#about" },
+  { label: "Company", href: "#company" },
+  { label: "We built for", href: "#we-built-for" },
   { label: "Resources", href: "#contact" },
 ];
 
