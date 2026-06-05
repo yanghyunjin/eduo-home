@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import ScrollReveal from "../ScrollReveal";
 import { OperationsBackground, OperationsCard } from "../assets";
 
 const OperationsSection = () => {
@@ -14,18 +15,18 @@ const OperationsSection = () => {
       />
       <div className="absolute inset-0 bg-white/15" />
       <div className="relative mx-auto max-w-[1020px] px-6">
-        <div className="flex flex-col items-center gap-10 rounded-[12px] bg-white/90 p-10 shadow-[0_20px_70px_rgba(15,23,42,0.18)] md:flex-row">
+        <ScrollReveal className="flex flex-col items-center gap-10 rounded-[12px] bg-white/90 p-10 shadow-[0_20px_70px_rgba(15,23,42,0.18)] md:flex-row">
           <Image
             src={OperationsCard}
             alt="EDUO connected workflows"
             className="w-full rounded-[4px] md:w-[498px]"
           />
-          <p className="font-sans text-lg font-semibold leading-7 md:max-w-[424px]">
+          <p className="font-sans text-[20px] font-medium leading-none tracking-[-0.02em] md:max-w-[424px]">
             Attendance, grading, reporting, scheduling, communication, and approvals are seamlessly
             connected into practical day-to-day workflows.
           </p>
-        </div>
-        <h2 className="mt-20 text-center text-[40px] font-semibold leading-tight tracking-[-0.02em] sm:text-[56px]">
+        </ScrollReveal>
+        <h2 className="mt-20 text-center font-sans text-[40px] font-medium leading-none tracking-[-0.03em] sm:text-[56px]">
           Unified operations
         </h2>
       </div>

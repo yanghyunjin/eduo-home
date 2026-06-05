@@ -4,7 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 
+import ButtonLinkout from "../ButtonLinkout";
+import HlsVideo from "../HlsVideo";
 import { HeroBackground } from "../assets";
+
+const HOME_MAIN_VIDEO =
+  "https://transcoded-edu-video.s3.ap-northeast-2.amazonaws.com/assets/0188cb86-a143-4562-9ae3-dcc5abffb683/HLS/home_main_background.m3u8";
 
 const HeroSection = () => {
   const [isOpen, setOpen] = useState(false);
@@ -22,28 +27,36 @@ const HeroSection = () => {
         url="https://transcoded-edu-video.s3.ap-northeast-2.amazonaws.com/EDUO.mp4"
         onClose={() => setOpen(false)}
       />
-      <Image
-        src={HeroBackground}
-        alt="Students using EDUO in a classroom"
-        fill
-        priority
-        className="object-cover"
-        sizes="100vw"
+      <Image src={HeroBackground} alt="" fill priority className="object-cover" sizes="100vw" />
+      <HlsVideo
+        src={HOME_MAIN_VIDEO}
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        crossOrigin="anonymous"
+        poster={HeroBackground.src}
+        aria-label="Students using EDUO in a classroom"
       />
       <div className="absolute inset-0 bg-black/55" />
       <div className="relative z-10 mx-auto flex w-full max-w-[980px] flex-col items-center px-6 text-center">
-        <h1 className="max-w-[820px] text-[42px] font-semibold leading-[0.96] tracking-[-0.02em] sm:text-[72px]">
-          All-in-one education
-          <br />
-          management solution.
+        <h1 className="eduo-hero-enter flex max-w-[820px] flex-col text-center text-[42px] leading-none sm:text-[80px]">
+          <span className="font-serif font-normal tracking-[-0.04em]">
+            All-in-one education
+          </span>
+          <span className="mt-[-4px] font-sans font-normal tracking-[-0.05em] sm:mt-[-8px]">
+            management solution.
+          </span>
         </h1>
-        <button
+        <ButtonLinkout
           type="button"
           onClick={() => setOpen(true)}
-          className="mt-10 rounded-full bg-[#7037d8] px-8 py-3 font-sans text-sm font-semibold text-white transition hover:bg-[#5c28bf]"
+          className="eduo-hero-enter eduo-hero-enter-delay mt-10"
         >
           Explore the platform
-        </button>
+        </ButtonLinkout>
       </div>
     </section>
   );

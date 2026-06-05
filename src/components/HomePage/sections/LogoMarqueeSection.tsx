@@ -8,7 +8,7 @@ const LogoMarqueeSection = () => {
   return (
     <section className="px-6 py-16">
       <div className="mx-auto max-w-[1152px] text-center">
-        <p className="font-sans text-sm font-semibold text-[#171717]">
+        <p className="font-serif text-[20px] font-normal leading-[1.2] tracking-[-0.04em] text-[#171717]">
           Join 10,000+ owners, directors, teachers, and families already on EDUO learning
         </p>
         <div className="logo-marquee mt-9 overflow-hidden">
