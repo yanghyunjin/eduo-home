@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
-import ModalVideo from "react-modal-video";
 
 import ButtonLinkout from "../ButtonLinkout";
 import HlsVideo from "../HlsVideo";
@@ -12,21 +10,18 @@ const HOME_MAIN_VIDEO =
   "https://transcoded-edu-video.s3.ap-northeast-2.amazonaws.com/assets/0188cb86-a143-4562-9ae3-dcc5abffb683/HLS/home_main_background.m3u8";
 
 const HeroSection = () => {
-  const [isOpen, setOpen] = useState(false);
+  const scrollToPlatformVideo = () => {
+    document.getElementById("what-is-eduo")?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   return (
     <section
       id="home"
       className="relative flex min-h-[800px] items-center justify-center overflow-hidden text-white"
     >
-      <ModalVideo
-        channel="custom"
-        autoplay
-        start
-        isOpen={isOpen}
-        url="https://transcoded-edu-video.s3.ap-northeast-2.amazonaws.com/EDUO.mp4"
-        onClose={() => setOpen(false)}
-      />
       <Image src={HeroBackground} alt="" fill priority className="object-cover" sizes="100vw" />
       <HlsVideo
         src={HOME_MAIN_VIDEO}
@@ -52,7 +47,7 @@ const HeroSection = () => {
         </h1>
         <ButtonLinkout
           type="button"
-          onClick={() => setOpen(true)}
+          onClick={scrollToPlatformVideo}
           className="eduo-hero-enter eduo-hero-enter-delay mt-10"
         >
           Explore the platform

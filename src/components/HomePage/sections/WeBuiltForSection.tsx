@@ -1,39 +1,52 @@
+import Image from "next/image";
+
 import { roleGuides } from "../data";
+import { AbstractBackground } from "../assets";
 
 const WeBuiltForSection = () => {
   return (
     <section
       id="we-built-for"
-      className="relative scroll-mt-[60px] overflow-hidden bg-[#eeeeee] px-5 pb-[120px] pt-[124px] sm:px-8 lg:min-h-[694px]"
+      className="relative scroll-mt-[60px] overflow-hidden px-5 pb-[120px] pt-[124px] sm:px-8 lg:pb-[140px] lg:pt-[140px]"
     >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-70"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 18% 20%, rgba(255,255,255,0.95) 0 2px, transparent 2px), radial-gradient(circle at 70% 18%, rgba(255,255,255,0.8) 0 1.5px, transparent 1.5px), linear-gradient(145deg, rgba(255,255,255,0.9), rgba(220,220,220,0.62) 48%, rgba(255,255,255,0.84))",
-          backgroundSize: "10px 10px, 8px 8px, 100% 100%",
-        }}
+      <Image
+        src={AbstractBackground}
+        alt=""
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
       />
-      <div className="relative mx-auto max-w-[1240px]">
-        <div className="mx-auto max-w-[1060px] text-center">
-          <p className="font-serif text-lg text-black/50 sm:text-xl">Customer story</p>
-          <h2 className="mt-8 text-[36px] font-medium leading-[0.98] tracking-[-0.03em] sm:text-[64px] lg:text-[76px]">
-            Smart solution for everyone
-          </h2>
-        </div>
+      <div className="relative mx-auto flex max-w-[1030px] flex-col items-center">
+        <h1 className="text-center leading-none tracking-[-0.04em] text-black">
+          <span className="block font-serif text-[40px] font-normal sm:text-[72px] lg:text-[80px]">
+            Smart solution
+          </span>
+          <span className="mt-[-2px] block font-sans text-[40px] font-normal tracking-[-0.05em] sm:mt-[-8px] sm:text-[72px] lg:text-[80px]">
+            for everyone
+          </span>
+        </h1>
 
-        <div className="mt-16 grid gap-5 lg:mt-20 lg:grid-cols-4">
+        <div className="mt-10 flex w-full max-w-[820px] flex-col gap-4 sm:mt-14">
           {roleGuides.map((guide) => (
             <article
               key={guide.title}
-              className="min-h-[236px] rounded-[12px] bg-white p-10 lg:min-h-[267px]"
+              className="flex min-h-[236px] flex-col items-start justify-between gap-7 rounded-[16px] bg-white p-6 sm:min-h-[172px] sm:flex-row sm:gap-10 sm:p-10"
             >
-              <h3 className="font-sans text-lg font-extrabold leading-tight text-black sm:text-xl">
-                {guide.title}
-              </h3>
-              <p className="mt-8 font-serif text-xl leading-[1.1] tracking-[-0.02em] text-black sm:text-2xl lg:text-[22px]">
-                {guide.copy}
-              </p>
+              <div className="max-w-[596px]">
+                <h2 className="font-sans text-[20px] font-semibold leading-none tracking-[-0.02em] text-black">
+                  {guide.title}
+                </h2>
+                <p className="mt-7 font-serif text-[20px] leading-[1.2] tracking-[-0.04em] text-black sm:text-[22px]">
+                  {guide.copy}
+                </p>
+              </div>
+              <a
+                href="/contact"
+                className="inline-flex h-[42px] shrink-0 items-center justify-center rounded-full bg-[linear-gradient(90deg,#4558F2_0%,#8C2A94_100%)] px-[22px] font-['Geist_Mono'] text-[14px] font-medium leading-none text-white"
+              >
+                View more
+              </a>
             </article>
           ))}
         </div>

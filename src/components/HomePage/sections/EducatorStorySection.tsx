@@ -18,9 +18,10 @@ const testimonials = [
     role: "Math Teacher at Benedem",
   },
   {
-    quote: "EDUO awesome",
-    name: "Alexa",
-    role: "Math Teacher at Benedem",
+    quote:
+      "What stood out most was how quickly our team adapted. EDUO feels practical for real school routines, and it gives teachers and administrators the same clear view of what needs attention each day.",
+    name: "Daniel",
+    role: "Academic Coordinator at Veritas Collegiate Academy",
   },
 ];
 

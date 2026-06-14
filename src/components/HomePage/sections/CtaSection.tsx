@@ -8,7 +8,7 @@ const CtaSection = () => {
       </h2>
       <ButtonLinkout
         as="a"
-        href="mailto:support@eduolearning.com"
+        href="/we-built-for"
         className="mt-10 min-w-[180px]"
       >
         Contact with us

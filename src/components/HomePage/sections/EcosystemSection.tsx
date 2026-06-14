@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import HlsVideo from "../HlsVideo";
@@ -9,20 +11,29 @@ const WHAT_IS_EDUO_VIDEO =
 
 const EcosystemSection = () => {
   return (
-    <section className="px-6 pb-28">
+    <section id="what-is-eduo" className="scroll-mt-[80px] px-6 pb-28">
       <div className="mx-auto max-w-[1200px]">
-        <HlsVideo
-          src={WHAT_IS_EDUO_VIDEO}
-          className="aspect-video w-full rounded-[4px] bg-[#4c42c8] object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          crossOrigin="anonymous"
-          poster={EduoDiagram.src}
-          aria-label="What is EDUO overview"
-        />
+        <div className="relative">
+          <Image
+            src={EduoDiagram}
+            alt=""
+            fill
+            className="rounded-[4px] object-cover"
+            sizes="100vw"
+          />
+          <HlsVideo
+            src={WHAT_IS_EDUO_VIDEO}
+            className="relative aspect-video w-full rounded-[4px] bg-[#4c42c8] object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            crossOrigin="anonymous"
+            poster={EduoDiagram.src}
+            aria-label="What is EDUO overview"
+          />
+        </div>
         <ScrollReveal className="mx-auto mt-16 max-w-[1072px] text-center">
           <h2 className="font-sans text-[40px] font-medium leading-none tracking-[-0.03em] sm:text-[56px]">
             Connected ecosystem

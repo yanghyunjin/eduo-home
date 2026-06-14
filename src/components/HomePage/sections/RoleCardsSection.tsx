@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import ButtonLinkout from "../ButtonLinkout";
 import { roles } from "../data";
 
 const RoleCardsSection = () => {
@@ -24,13 +23,6 @@ const RoleCardsSection = () => {
             </div>
           ))}
         </div>
-        <ButtonLinkout
-          as="a"
-          href="#we-built-for"
-          className="mt-14"
-        >
-          Discover more
-        </ButtonLinkout>
       </div>
     </section>
   );
