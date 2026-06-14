@@ -1,128 +1,69 @@
 "use client";
+
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+import { useState } from "react";
+
+import EduoLogo from "/public/images/logo/EDUO_LOGO.png";
+
+const navItems = [
+  { label: "Company", href: "/company" },
+  { label: "We built for", href: "/we-built-for" },
+];
 
 const Header = () => {
-  // Navbar toggle
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const navbarToggleHandler = () => {
-    setNavbarOpen(!navbarOpen);
-  };
-
-  // Sticky Navbar
-  const [sticky, setSticky] = useState(false);
-  const [navbar, setNavbar] = useState(false);
-  const handleStickyNavbar = () => {
-    if (window.scrollY >= 80 || window.innerWidth < 1280) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-
-  const handleResize = () => {
-    const width = window.innerWidth;
-    if (width < 640) {
-      setSticky(true);
-      setNavbar(false);
-    } else if (width < 1280) {
-      setSticky(true);
-      setNavbar(true);
-    } else {
-      setSticky(false);
-      setNavbar(true);
-    }
-  };
-
-  const [isInit, setInit] = useState(false);
-  useEffect(() => {
-    if (!isInit) {
-      setInit(true);
-      handleResize();
-    }
-    window.addEventListener("scroll", handleStickyNavbar);
-    window.addEventListener("resize", handleResize);
-  }, [isInit]);
-
-  // submenu handler
-  const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(-1);
-    } else {
-      setOpenIndex(index);
-    }
-  };
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const scrollToTop2 = () => {
-    window.scrollTo({
-      top: 2280,
-      behavior: "smooth",
-    });
-  };
-
-  const scrollToTop3 = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
-    });
-  };
-
-  const usePathName = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <header
-        className={`header left-0 top-0 z-40 flex w-full items-center justify-center ${
-          sticky
-            ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition "
-            : "absolute bg-transparent"
-        }`}
-      >
-        <div className="relative flex h-20 w-full max-w-screen-2xl items-center justify-between px-4">
-          <div className="flex w-full items-center justify-between ">
-            <div
-              className="h-10 w-[120px] bg-cover bg-center xl:ml-20"
-              style={{ backgroundImage: "url(/images/logo/EDUO_LOGO.png)" }}
-            ></div>
-            <div
-              className={`${navbar ? "visible" : "invisible"} flex w-1/4 items-center justify-end`}
+    <header className="eduo-header-enter fixed left-0 right-0 top-0 z-[9999] flex min-h-[60px] items-center bg-white/[0.001] px-5 backdrop-blur-[10px]">
+      <div className="mx-auto flex w-full max-w-[1240px] items-center justify-between">
+        <a href="/" aria-label="EDUO home" className="block h-10 w-[120px]">
+          <Image src={EduoLogo} alt="EDUO" className="h-10 w-auto object-contain" priority />
+        </a>
+        <nav className="hidden items-center gap-10 font-sans text-[16px] font-medium leading-[1.2] text-black md:flex">
+          {navItems.map((item) => (
+            <a key={item.label} href={item.href} className="transition hover:text-[#7037d8]">
+              {item.label}
+            </a>
+          ))}
+          <a
+            href="https://www.eduo-learning.com/"
+            className="transition hover:text-[#7037d8]"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Log in EDUO
+          </a>
+        </nav>
+        <button
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((current) => !current)}
+          className="flex h-10 w-10 items-center justify-center font-sans text-[30px] font-light leading-none text-black md:hidden"
+        >
+          <span className={`mt-[-2px] transition-transform ${isOpen ? "rotate-45" : ""}`}>+</span>
+        </button>
+      </div>
+      {isOpen ? (
+        <div className="absolute left-5 right-5 top-[60px] rounded-[8px] border border-black/10 bg-white p-5 shadow-[0_18px_40px_rgba(15,23,42,0.12)] md:hidden">
+          <nav className="flex flex-col gap-4 font-sans text-[16px] font-medium leading-[1.2] text-black">
+            {navItems.map((item) => (
+              <a key={item.label} href={item.href} onClick={() => setIsOpen(false)}>
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="https://www.eduo-learning.com/"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setIsOpen(false)}
             >
-              <div className="flex ">
-                <div
-                  onClick={scrollToTop}
-                  className={`cursor-pointer font-medium ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
-                >
-                  Home
-                </div>
-                <div
-                  onClick={scrollToTop2}
-                  className={`cursor-pointer font-normal ${sticky ? "text-black" : "text-white"} mr-10 text-lg`}
-                >
-                  About
-                </div>
-              </div>
-              <button
-                onClick={scrollToTop3}
-                className="mr-10 rounded-lg bg-red-500 px-4 py-2 text-lg font-medium text-white"
-              >
-                Contact
-              </button>
-            </div>
-          </div>
+              Log in EDUO
+            </a>
+          </nav>
         </div>
-      </header>
-    </>
+      ) : null}
+    </header>
   );
 };
 

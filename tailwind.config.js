@@ -25,6 +25,11 @@ module.exports = {
       "3xl": "1920px",
     },
     extend: {
+      fontFamily: {
+        sans: ['"Radio Canada Big"', "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ['"Source Serif 4"', '"Source Serif Pro"', "Georgia", "serif"],
+        mono: ['"Geist Mono"', '"Roboto Mono"', "ui-monospace", "monospace"],
+      },
       colors: {
         current: "currentColor",
         transparent: "transparent",
